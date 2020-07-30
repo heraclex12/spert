@@ -5,14 +5,14 @@ from logging import Logger
 from typing import Iterable, List
 
 from tqdm import tqdm
-from transformers import BertTokenizer
-
+# from transformers import BertTokenizer, AutoTokenizer
+from transformers_.src.transformers import PhobertTokenizer
 from spert import util
 from spert.entities import Dataset, EntityType, RelationType, Entity, Relation, Document
 
 
 class BaseInputReader(ABC):
-    def __init__(self, types_path: str, tokenizer: BertTokenizer, neg_entity_count: int = None,
+    def __init__(self, types_path: str, tokenizer: PhobertTokenizer, neg_entity_count: int = None,
                  neg_rel_count: int = None, max_span_size: int = None, logger: Logger = None):
         types = json.load(open(types_path), object_pairs_hook=OrderedDict)  # entity + relation types
 
@@ -54,7 +54,7 @@ class BaseInputReader(ABC):
         self._tokenizer = tokenizer
         self._logger = logger
 
-        self._vocabulary_size = tokenizer.vocab_size
+        # self._vocabulary_size = tokenizer.vocab_size
         self._context_size = -1
 
     @abstractmethod
@@ -106,9 +106,9 @@ class BaseInputReader(ABC):
     def entity_type_count(self):
         return len(self._entity_types)
 
-    @property
-    def vocabulary_size(self):
-        return self._vocabulary_size
+    # @property
+    # def vocabulary_size(self):
+    #     return self._vocabulary_size
 
     @property
     def context_size(self):
@@ -127,7 +127,7 @@ class BaseInputReader(ABC):
 
 
 class JsonInputReader(BaseInputReader):
-    def __init__(self, types_path: str, tokenizer: BertTokenizer, neg_entity_count: int = None,
+    def __init__(self, types_path: str, tokenizer: PhobertTokenizer, neg_entity_count: int = None,
                  neg_rel_count: int = None, max_span_size: int = None, logger: Logger = None):
         super().__init__(types_path, tokenizer, neg_entity_count, neg_rel_count, max_span_size, logger)
 
@@ -150,6 +150,7 @@ class JsonInputReader(BaseInputReader):
         jrelations = doc['relations']
         jentities = doc['entities']
 
+        print(len(jtokens))
         # parse tokens
         doc_tokens, doc_encoding = self._parse_tokens(jtokens, dataset)
 
@@ -170,9 +171,10 @@ class JsonInputReader(BaseInputReader):
         # full document encoding including special tokens ([CLS] and [SEP]) and byte-pair encodings of original tokens
         doc_encoding = [self._tokenizer.convert_tokens_to_ids('[CLS]')]
 
+
         # parse tokens
         for i, token_phrase in enumerate(jtokens):
-            token_encoding = self._tokenizer.encode(token_phrase, add_special_tokens=False)
+            token_encoding = self._tokenizer.encode(token_phrase, add_special_tokens=True)
             span_start, span_end = (len(doc_encoding), len(doc_encoding) + len(token_encoding))
 
             token = dataset.create_token(i, span_start, span_end, token_phrase)

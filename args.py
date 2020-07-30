@@ -46,7 +46,7 @@ def _add_common_args(arg_parser):
     # Misc
     arg_parser.add_argument('--seed', type=int, default=None, help="Seed")
     arg_parser.add_argument('--cache_path', type=str, default=None,
-                            help="Path to cache transformer models (for HuggingFace transformers library)")
+                            help="Path to cache transformer models (for HuggingFace transformers_ library)")
 
 
 def train_argparser():

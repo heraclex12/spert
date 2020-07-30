@@ -5,10 +5,9 @@ import os
 import torch
 from torch.nn import DataParallel
 from torch.optim import Optimizer
-import transformers
 from torch.utils.data import DataLoader
-from transformers import AdamW, BertConfig
-from transformers import BertTokenizer
+from transformers_.src.transformers import AdamW, BertConfig, AutoConfig
+from transformers_.src.transformers import PhobertModel, PhobertConfig, PhobertTokenizer
 
 from spert import models
 from spert import sampling
@@ -26,13 +25,13 @@ SCRIPT_PATH = os.path.dirname(os.path.realpath(__file__))
 class SpERTTrainer(BaseTrainer):
     """ Joint entity and relation extraction training and evaluation """
 
+
     def __init__(self, args: argparse.Namespace):
         super().__init__(args)
 
         # byte-pair encoding
-        self._tokenizer = BertTokenizer.from_pretrained(args.tokenizer_path,
-                                                        do_lower_case=args.lowercase,
-                                                        cache_dir=args.cache_path)
+        self._tokenizer = PhobertTokenizer.from_pretrained("vinai/phobert-base",
+                                                        do_lower_case=False)
 
         # path to export predictions to
         self._predictions_path = os.path.join(self._log_path, 'predictions_%s_epoch_%s.json')
@@ -71,7 +70,11 @@ class SpERTTrainer(BaseTrainer):
         model_class = models.get_model(self.args.model_type)
 
         # load model
-        config = BertConfig.from_pretrained(self.args.model_path, cache_dir=self.args.cache_path)
+        config = PhobertConfig.from_pretrained(self.args.model_path, cache_dir=self.args.cache_path )
+        # config = RobertaConfig.from_pretrained('models/PhoBERT_base_transformers/config.json',
+        #                                        output_hidden_states=True,
+                                               # num_labels=45)
+
         util.check_version(config, model_class, self.args.model_path)
 
         config.spert_version = model_class.VERSION

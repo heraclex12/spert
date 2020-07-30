@@ -1,9 +1,9 @@
 import torch
 from torch import nn as nn
-from transformers import BertConfig
-from transformers import BertModel
-from transformers import BertPreTrainedModel
-
+from transformers_.src.transformers import BertConfig, AutoModelWithLMHead, AutoConfig
+from transformers_.src.transformers import BertModel
+from transformers_.src.transformers import BertPreTrainedModel
+from transformers_.src.transformers import PhobertTokenizer, PhobertConfig, PhobertModel
 from spert import sampling
 from spert import util
 
@@ -21,15 +21,15 @@ def get_token(h: torch.tensor, x: torch.tensor, token: int):
     return token_h
 
 
-class SpPhoBert(BertPreTraBertPreTrainedModelinedModel):
-     """ Span-based model to jointly extract entities and relations with PhoBert """
+class SpPhoBert(BertPreTrainedModel):
+    VERSION = '1.0'
 
-     def __init__(self, config: BertConfig, cls_token: int, relation_types: int, entity_types: int,
+    def __init__(self, config: PhobertConfig, cls_token: int, relation_types: int, entity_types: int,
                  size_embedding: int, prop_drop: float, freeze_transformer: bool, max_pairs: int = 100):
         super(SpPhoBert, self).__init__(config)
 
         # RobertaBERT model
-        self.bert = RobertaModel(config)
+        self.phoBert = PhobertModel(config)
 
         # layers
         self.rel_classifier = nn.Linear(config.hidden_size * 3 + size_embedding * 2, relation_types)
@@ -49,9 +49,9 @@ class SpPhoBert(BertPreTraBertPreTrainedModelinedModel):
             print("Freeze transformer weights")
 
             # freeze all transformer weights
-            for param in self.bert.parameters():
+            for param in self.phoBert.parameters():
                 param.requires_grad = False
-                
+
     def _forward_train(self, encodings: torch.tensor, context_masks: torch.tensor, entity_masks: torch.tensor,
                        entity_sizes: torch.tensor, relations: torch.tensor, rel_masks: torch.tensor):
         # get contextualized token embeddings from last transformer layer
@@ -221,7 +221,6 @@ class SpPhoBert(BertPreTraBertPreTrainedModelinedModel):
             return self._forward_train(*args, **kwargs)
         else:
             return self._forward_eval(*args, **kwargs)
-
 
 
 class SpERT(BertPreTrainedModel):
