@@ -111,3 +111,6 @@ tmp/
 runs/
 *.state
 checkpoint
+mypython/bin/
+
+mypython/
