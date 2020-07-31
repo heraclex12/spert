@@ -152,7 +152,7 @@ def extend_tensor(tensor, extended_shape, fill=0):
     return extended_tensor
 
 
-def padded_stack(tensors, padding=0):
+def padded_stack(tensors, padding=1):
     dim_count = len(tensors[0].shape)
 
     max_shape = [max([t.shape[d] for t in tensors]) for d in range(dim_count)]
@@ -176,7 +176,7 @@ def batch_index(tensor, index, pad=False):
         return padded_stack([tensor[i][index[i]] for i in range(index.shape[0])])
 
 
-def padded_nonzero(tensor, padding=0):
+def padded_nonzero(tensor, padding=1):
     indices = padded_stack([tensor[i].nonzero().view(-1) for i in range(tensor.shape[0])], padding)
     return indices
 

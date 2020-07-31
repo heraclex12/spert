@@ -2,7 +2,7 @@ import torch
 from torch import nn as nn, Tensor
 import numpy as np
 from transformers_.src.transformers import BertPreTrainedModel
-from transformers_.src.transformers import PhobertConfig, PhobertModel
+from transformers_.src.transformers import PhobertConfig, PhobertModel, PhobertTokenizer
 from spert import sampling
 from spert import util
 
@@ -10,34 +10,11 @@ from spert import util
 def get_token(h: torch.tensor, x: torch.tensor, token: int):
     """ Get specific token embedding (e.g. [CLS]) """
     emb_size = h.shape[-1]
-
     token_h = h.view(-1, emb_size)
     flat = x.contiguous().view(-1)
 
+    token_h = token_h[flat == 0, :]
 
-    s1 = h.shape
-    s2 = x.shape
-    s3 = token_h.shape
-    # get contextualized embedding of given token
-    return_token = np.empty
-    np_token = flat.detach().cpu().numpy()
-    # for f in flat.detach().cpu().numpy():
-        # print(f)
-        # if f[0] == 0:
-            # return_token = return_token, f
-    return_token = np.empty
-    current_ids = np.empty
-
-    for t in np_token:
-        if t == 0 and current_ids:
-            return_token.append(current_ids)
-            current_ids = np.empty()
-        current_ids.append(t)
-
-    token_h = token_h[flat[1].item() == 0.0, :]
-    s3 = token_h.shape
-    s4 = np_token.shape
-    f = flat.shape
     return token_h
 
 class SpPhoBert(BertPreTrainedModel):

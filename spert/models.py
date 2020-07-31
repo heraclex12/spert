@@ -12,18 +12,11 @@ from spert.spPhoBert_model import SpPhoBert
 def get_token(h: torch.tensor, x: torch.tensor, token: int):
     """ Get specific token embedding (e.g. [CLS]) """
     emb_size = h.shape[-1]
-
     token_h = h.view(-1, emb_size)
     flat = x.contiguous().view(-1)
 
-    s1 = h.shape
-    s2 = x.shape
-    s3 = token_h.shape
     # get contextualized embedding of given token
     token_h = token_h[flat == token, :]
-    s3 = token_h.shape
-    f = flat.shape
-
     return token_h
 
 

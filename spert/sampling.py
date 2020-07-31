@@ -81,7 +81,7 @@ def create_train_sample(doc, neg_entity_count: int, neg_rel_count: int, max_span
 
     # create tensors
     # token indices
-    print(encodings)
+    # print(encodings)
     encodings = torch.tensor(encodings, dtype=torch.long)
 
     # masking of tokens
