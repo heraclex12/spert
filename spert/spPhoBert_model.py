@@ -1,6 +1,6 @@
 import torch
-from torch import nn as nn
-
+from torch import nn as nn, Tensor
+import numpy as np
 from transformers_.src.transformers import BertPreTrainedModel
 from transformers_.src.transformers import PhobertConfig, PhobertModel
 from spert import sampling
@@ -14,9 +14,30 @@ def get_token(h: torch.tensor, x: torch.tensor, token: int):
     token_h = h.view(-1, emb_size)
     flat = x.contiguous().view(-1)
 
-    # get contextualized embedding of given token
-    token_h = token_h[flat == token, :]
 
+    s1 = h.shape
+    s2 = x.shape
+    s3 = token_h.shape
+    # get contextualized embedding of given token
+    return_token = np.empty
+    np_token = flat.detach().cpu().numpy()
+    # for f in flat.detach().cpu().numpy():
+        # print(f)
+        # if f[0] == 0:
+            # return_token = return_token, f
+    return_token = np.empty
+    current_ids = np.empty
+
+    for t in np_token:
+        if t == 0 and current_ids:
+            return_token.append(current_ids)
+            current_ids = np.empty()
+        current_ids.append(t)
+
+    token_h = token_h[flat[1].item() == 0.0, :]
+    s3 = token_h.shape
+    s4 = np_token.shape
+    f = flat.shape
     return token_h
 
 class SpPhoBert(BertPreTrainedModel):
@@ -35,7 +56,7 @@ class SpPhoBert(BertPreTrainedModel):
         self.size_embeddings = nn.Embedding(100, size_embedding)
         self.dropout = nn.Dropout(prop_drop)
 
-        self._cls_token = cls_token
+        self._cls_token = 101
         self._relation_types = relation_types
         self._entity_types = entity_types
         self._max_pairs = max_pairs
@@ -123,14 +144,15 @@ class SpPhoBert(BertPreTrainedModel):
         entity_spans_pool = entity_spans_pool.max(dim=2)[0]
 
         # get cls token as candidate context representation
-        entity_ctx = get_token(h, encodings, self._cls_token)
-        shape = entity_ctx.unsqueeze(1).repeat(1, entity_spans_pool.shape[1], 1).shape
+        entity_ctx = get_token(h, encodings, 1)
+
+        shape = entity_ctx.unsqueeze(1).shape
         s2 = entity_spans_pool.shape
         s3 = size_embeddings.shape
         # create candidate representations including context, max pooled span and size embedding
 
         entity_repr = torch.cat([entity_ctx.unsqueeze(1).repeat(1, entity_spans_pool.shape[1], 1),
-                                 entity_spans_pool, size_embeddings], dim=0)
+                                 entity_spans_pool, size_embeddings], dim=2 )
         entity_repr = self.dropout(entity_repr)
 
         # classify entity candidates

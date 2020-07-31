@@ -78,7 +78,7 @@ class SpERTTrainer(BaseTrainer):
         model = model_class.from_pretrained(pretrained_model_name_or_path=self.args.model_path,
                                             config=config,
                                             # SpERT model parameters
-                                            cls_token=self._tokenizer.convert_tokens_to_ids('<s>'),
+                                            cls_token=self._tokenizer.convert_tokens_to_ids("[CLS]"),
                                             relation_types=input_reader.relation_type_count - 1,
                                             entity_types=input_reader.entity_type_count,
                                             max_pairs=self.args.max_pairs,

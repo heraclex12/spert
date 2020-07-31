@@ -5,14 +5,14 @@ from logging import Logger
 from typing import Iterable, List
 
 from tqdm import tqdm
-from transformers_.src.transformers import BertTokenizer
+from transformers_.src.transformers import BertTokenizer, PhobertTokenizer
 
 from spert import util
 from spert.entities import Dataset, EntityType, RelationType, Entity, Relation, Document
 
 
 class BaseInputReader(ABC):
-    def __init__(self, types_path: str, tokenizer: BertTokenizer, neg_entity_count: int = None,
+    def __init__(self, types_path: str, tokenizer: PhobertTokenizer, neg_entity_count: int = None,
                  neg_rel_count: int = None, max_span_size: int = None, logger: Logger = None):
         types = json.load(open(types_path), object_pairs_hook=OrderedDict)  # entity + relation types
 
@@ -124,7 +124,7 @@ class BaseInputReader(ABC):
 
 
 class JsonInputReader(BaseInputReader):
-    def __init__(self, types_path: str, tokenizer: BertTokenizer, neg_entity_count: int = None,
+    def __init__(self, types_path: str, tokenizer: PhobertTokenizer, neg_entity_count: int = None,
                  neg_rel_count: int = None, max_span_size: int = None, logger: Logger = None):
         super().__init__(types_path, tokenizer, neg_entity_count, neg_rel_count, max_span_size, logger)
 
@@ -166,6 +166,7 @@ class JsonInputReader(BaseInputReader):
 
         # full document encoding including special tokens ([CLS] and [SEP]) and byte-pair encodings of original tokens
         doc_encoding = [0]
+        # doc_encoding = [self._tokenizer.cls_token_id]
         # parse tokens
         for i, token_phrase in enumerate(jtokens):
             token_encoding = self._tokenizer.encode(token_phrase, add_special_tokens=False)
@@ -177,6 +178,7 @@ class JsonInputReader(BaseInputReader):
             doc_encoding += token_encoding
 
         doc_encoding += [2]
+        # doc_encoding += [self._tokenizer.sep_token_id]
 
         return doc_tokens, doc_encoding
 

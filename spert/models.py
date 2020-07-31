@@ -16,8 +16,13 @@ def get_token(h: torch.tensor, x: torch.tensor, token: int):
     token_h = h.view(-1, emb_size)
     flat = x.contiguous().view(-1)
 
+    s1 = h.shape
+    s2 = x.shape
+    s3 = token_h.shape
     # get contextualized embedding of given token
     token_h = token_h[flat == token, :]
+    s3 = token_h.shape
+    f = flat.shape
 
     return token_h
 
@@ -129,6 +134,11 @@ class SpERT(BertPreTrainedModel):
 
         # get cls token as candidate context representation
         entity_ctx = get_token(h, encodings, self._cls_token)
+
+        s0 = entity_ctx.shape
+        s1 = entity_ctx.unsqueeze(1).repeat(1, entity_spans_pool.shape[1], 1).shape
+        s2 = entity_spans_pool.shape
+        s3 = size_embeddings.shape
 
         # create candidate representations including context, max pooled span and size embedding
         entity_repr = torch.cat([entity_ctx.unsqueeze(1).repeat(1, entity_spans_pool.shape[1], 1),
