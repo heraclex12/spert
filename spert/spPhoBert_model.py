@@ -1,12 +1,10 @@
 import torch
 from torch import nn as nn
-from transformers_.src.transformers import BertConfig
-from transformers_.src.transformers import BertModel
-from transformers_.src.transformers import BertPreTrainedModel
 
+from transformers_.src.transformers import BertPreTrainedModel
+from transformers_.src.transformers import PhobertConfig, PhobertModel
 from spert import sampling
 from spert import util
-from spert.spPhoBert_model import SpPhoBert
 
 
 def get_token(h: torch.tensor, x: torch.tensor, token: int):
@@ -21,18 +19,15 @@ def get_token(h: torch.tensor, x: torch.tensor, token: int):
 
     return token_h
 
+class SpPhoBert(BertPreTrainedModel):
+    VERSION = '1.0'
 
-class SpERT(BertPreTrainedModel):
-    """ Span-based model to jointly extract entities and relations """
-
-    VERSION = '1.1'
-
-    def __init__(self, config: BertConfig, cls_token: int, relation_types: int, entity_types: int,
+    def __init__(self, config: PhobertConfig, cls_token: int, relation_types: int, entity_types: int,
                  size_embedding: int, prop_drop: float, freeze_transformer: bool, max_pairs: int = 100):
-        super(SpERT, self).__init__(config)
+        super(SpPhoBert, self).__init__(config)
 
-        # BERT model
-        self.bert = BertModel(config)
+        # RobertaBERT model
+        self.phoBert = PhobertModel(config)
 
         # layers
         self.rel_classifier = nn.Linear(config.hidden_size * 3 + size_embedding * 2, relation_types)
@@ -52,14 +47,14 @@ class SpERT(BertPreTrainedModel):
             print("Freeze transformer weights")
 
             # freeze all transformer weights
-            for param in self.bert.parameters():
+            for param in self.phoBert.parameters():
                 param.requires_grad = False
 
     def _forward_train(self, encodings: torch.tensor, context_masks: torch.tensor, entity_masks: torch.tensor,
                        entity_sizes: torch.tensor, relations: torch.tensor, rel_masks: torch.tensor):
         # get contextualized token embeddings from last transformer layer
         context_masks = context_masks.float()
-        h = self.bert(input_ids=encodings, attention_mask=context_masks)[0]
+        h = self.phoBert(input_ids=encodings, attention_mask=context_masks)[0]
 
         batch_size = encodings.shape[0]
 
@@ -86,7 +81,7 @@ class SpERT(BertPreTrainedModel):
                       entity_sizes: torch.tensor, entity_spans: torch.tensor, entity_sample_masks: torch.tensor):
         # get contextualized token embeddings from last transformer layer
         context_masks = context_masks.float()
-        h = self.bert(input_ids=encodings, attention_mask=context_masks)[0]
+        h = self.phoBert(input_ids=encodings, attention_mask=context_masks)[0]
 
         batch_size = encodings.shape[0]
         ctx_size = context_masks.shape[-1]
@@ -129,13 +124,17 @@ class SpERT(BertPreTrainedModel):
 
         # get cls token as candidate context representation
         entity_ctx = get_token(h, encodings, self._cls_token)
-
+        shape = entity_ctx.unsqueeze(1).repeat(1, entity_spans_pool.shape[1], 1).shape
+        s2 = entity_spans_pool.shape
+        s3 = size_embeddings.shape
         # create candidate representations including context, max pooled span and size embedding
+
         entity_repr = torch.cat([entity_ctx.unsqueeze(1).repeat(1, entity_spans_pool.shape[1], 1),
-                                 entity_spans_pool, size_embeddings], dim=2)
+                                 entity_spans_pool, size_embeddings], dim=0)
         entity_repr = self.dropout(entity_repr)
 
         # classify entity candidates
+        shape = entity_repr.shape
         entity_clf = self.entity_classifier(entity_repr)
 
         return entity_clf, entity_spans_pool
@@ -224,15 +223,3 @@ class SpERT(BertPreTrainedModel):
             return self._forward_train(*args, **kwargs)
         else:
             return self._forward_eval(*args, **kwargs)
-
-
-# Model access
-
-_MODELS = {
-    'spert': SpERT,
-    'spPhoBert': SpPhoBert
-}
-
-
-def get_model(name):
-    return _MODELS[name]

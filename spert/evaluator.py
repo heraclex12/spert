@@ -5,7 +5,7 @@ from typing import List, Tuple, Dict
 
 import torch
 from sklearn.metrics import precision_recall_fscore_support as prfs
-from transformers import BertTokenizer
+from transformers_.src.transformers import BertTokenizer
 
 from spert import util
 from spert.entities import Document, Dataset, EntityType

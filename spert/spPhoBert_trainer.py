@@ -6,8 +6,8 @@ import torch
 from torch.nn import DataParallel
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
-from transformers_.src.transformers import AdamW, BertConfig
-from transformers_.src.transformers import BertTokenizer
+from transformers_.src.transformers import AdamW
+from transformers_.src.transformers import PhobertConfig, PhobertTokenizer
 from transformers_.src.transformers import get_linear_schedule_with_warmup
 
 from spert import models
@@ -23,22 +23,24 @@ from spert.trainer import BaseTrainer
 SCRIPT_PATH = os.path.dirname(os.path.realpath(__file__))
 
 
-class SpERTTrainer(BaseTrainer):
+class SpPhoBERTTrainer(BaseTrainer):
+
     """ Joint entity and relation extraction training and evaluation """
+
 
     def __init__(self, args: argparse.Namespace):
         super().__init__(args)
 
         # byte-pair encoding
-        self._tokenizer = BertTokenizer.from_pretrained(args.tokenizer_path,
-                                                        do_lower_case=args.lowercase,
-                                                        cache_dir=args.cache_path)
+        self._tokenizer = PhobertTokenizer.from_pretrained("vinai/phobert-base",
+                                                           do_lower_case=False)
 
         # path to export predictions to
         self._predictions_path = os.path.join(self._log_path, 'predictions_%s_epoch_%s.json')
 
         # path to export relation extraction examples to
         self._examples_path = os.path.join(self._log_path, 'examples_%s_%s_epoch_%s.html')
+
 
     def train(self, train_path: str, valid_path: str, types_path: str, input_reader_cls: BaseInputReader):
         args = self.args
@@ -71,14 +73,19 @@ class SpERTTrainer(BaseTrainer):
         model_class = models.get_model(self.args.model_type)
 
         # load model
-        config = BertConfig.from_pretrained("bert-base-cased", cache_dir=self.args.cache_path)
+        config = PhobertConfig.from_pretrained(self.args.model_path, cache_dir=self.args.cache_path)
+        # config = RobertaConfig.from_pretrained('models/PhoBERT_base_transformers/config.json',
+        #                                        output_hidden_states=True,
+        # num_labels=45)
+
         util.check_version(config, model_class, self.args.model_path)
 
         config.spert_version = model_class.VERSION
-        model = model_class.from_pretrained(pretrained_model_name_or_path=self.args.model_path,
-                                            config=config,
+        model = model_class.from_pretrained(self.args.model_path,
+                                            config=self.args.model_path,
+                                            cache_dir=self.args.cache_path,
                                             # SpERT model parameters
-                                            cls_token=self._tokenizer.convert_tokens_to_ids('<s>'),
+                                            cls_token=0,
                                             relation_types=input_reader.relation_type_count - 1,
                                             entity_types=input_reader.entity_type_count,
                                             max_pairs=self.args.max_pairs,
@@ -99,8 +106,8 @@ class SpERTTrainer(BaseTrainer):
         optimizer = AdamW(optimizer_params, lr=args.lr, weight_decay=args.weight_decay, correct_bias=False)
         # create scheduler
         scheduler = get_linear_schedule_with_warmup(optimizer,
-                                                                 num_warmup_steps=args.lr_warmup * updates_total,
-                                                                 num_training_steps=updates_total)
+                                                    num_warmup_steps=args.lr_warmup * updates_total,
+                                                    num_training_steps=updates_total)
         # create loss function
         rel_criterion = torch.nn.BCEWithLogitsLoss(reduction='none')
         entity_criterion = torch.nn.CrossEntropyLoss(reduction='none')
@@ -130,6 +137,7 @@ class SpERTTrainer(BaseTrainer):
         self._logger.info("Saved in: %s" % self._save_path)
         self._close_summary_writer()
 
+
     def eval(self, dataset_path: str, types_path: str, input_reader_cls: BaseInputReader):
         args = self.args
         dataset_label = 'test'
@@ -149,13 +157,14 @@ class SpERTTrainer(BaseTrainer):
         # create model
         model_class = models.get_model(self.args.model_type)
 
-        config = BertConfig.from_pretrained(self.args.model_path, cache_dir=self.args.cache_path)
+        config = PhobertConfig.from_pretrained(self.args.model_path, cache_dir=self.args.cache_path)
         util.check_version(config, model_class, self.args.model_path)
 
         model = model_class.from_pretrained(self.args.model_path,
-                                            config=config,
+                                            config=self.args.model_path,
+                                            cache_dir=self.args.cache_path,
                                             # SpERT model parameters
-                                            cls_token=self._tokenizer.convert_tokens_to_ids('[CLS]'),
+                                            cls_token=0,
                                             relation_types=input_reader.relation_type_count - 1,
                                             entity_types=input_reader.entity_type_count,
                                             max_pairs=self.args.max_pairs,
@@ -170,6 +179,7 @@ class SpERTTrainer(BaseTrainer):
 
         self._logger.info("Logged in: %s" % self._log_path)
         self._close_summary_writer()
+
 
     def _train_epoch(self, model: torch.nn.Module, compute_loss: Loss, optimizer: Optimizer, dataset: Dataset,
                      updates_epoch: int, epoch: int):
@@ -207,6 +217,7 @@ class SpERTTrainer(BaseTrainer):
                 self._log_train(optimizer, batch_loss, epoch, iteration, global_iteration, dataset.label)
 
         return iteration
+
 
     def _eval(self, model: torch.nn.Module, dataset: Dataset, input_reader: JsonInputReader,
               epoch: int = 0, updates_epoch: int = 0, iteration: int = 0):
@@ -256,6 +267,7 @@ class SpERTTrainer(BaseTrainer):
         if self.args.store_examples:
             evaluator.store_examples()
 
+
     def _get_optimizer_params(self, model):
         param_optimizer = list(model.named_parameters())
         no_decay = ['bias', 'LayerNorm.bias', 'LayerNorm.weight']
@@ -265,6 +277,7 @@ class SpERTTrainer(BaseTrainer):
             {'params': [p for n, p in param_optimizer if any(nd in n for nd in no_decay)], 'weight_decay': 0.0}]
 
         return optimizer_params
+
 
     def _log_train(self, optimizer: Optimizer, loss: float, epoch: int,
                    iteration: int, global_iteration: int, label: str):
@@ -283,6 +296,7 @@ class SpERTTrainer(BaseTrainer):
         self._log_csv(label, 'loss_avg', avg_loss, epoch, iteration, global_iteration)
         self._log_csv(label, 'lr', lr, epoch, iteration, global_iteration)
 
+
     def _log_eval(self, ner_prec_micro: float, ner_rec_micro: float, ner_f1_micro: float,
                   ner_prec_macro: float, ner_rec_macro: float, ner_f1_macro: float,
 
@@ -292,7 +306,6 @@ class SpERTTrainer(BaseTrainer):
                   rel_nec_prec_micro: float, rel_nec_rec_micro: float, rel_nec_f1_micro: float,
                   rel_nec_prec_macro: float, rel_nec_rec_macro: float, rel_nec_f1_macro: float,
                   epoch: int, iteration: int, global_iteration: int, label: str):
-
         # log to tensorboard
         self._log_tensorboard(label, 'eval/ner_prec_micro', ner_prec_micro, global_iteration)
         self._log_tensorboard(label, 'eval/ner_recall_micro', ner_rec_micro, global_iteration)
@@ -326,6 +339,7 @@ class SpERTTrainer(BaseTrainer):
                       rel_nec_prec_macro, rel_nec_rec_macro, rel_nec_f1_macro,
                       epoch, iteration, global_iteration)
 
+
     def _log_datasets(self, input_reader):
         self._logger.info("Relation type count: %s" % input_reader.relation_type_count)
         self._logger.info("Entity type count: %s" % input_reader.entity_type_count)
@@ -346,11 +360,13 @@ class SpERTTrainer(BaseTrainer):
 
         self._logger.info("Context size: %s" % input_reader.context_size)
 
+
     def _init_train_logging(self, label):
         self._add_dataset_logging(label,
                                   data={'lr': ['lr', 'epoch', 'iteration', 'global_iteration'],
                                         'loss': ['loss', 'epoch', 'iteration', 'global_iteration'],
                                         'loss_avg': ['loss_avg', 'epoch', 'iteration', 'global_iteration']})
+
 
     def _init_eval_logging(self, label):
         self._add_dataset_logging(label,

@@ -3,6 +3,7 @@ import argparse
 from args import train_argparser, eval_argparser
 from config_reader import process_configs
 from spert import input_reader
+from spert.spPhoBert_trainer import SpPhoBERTTrainer
 from spert.spert_trainer import SpERTTrainer
 
 
@@ -11,6 +12,14 @@ def __train(run_args):
     trainer.train(train_path=run_args.train_path, valid_path=run_args.valid_path,
                   types_path=run_args.types_path, input_reader_cls=input_reader.JsonInputReader)
 
+def __train_vn(run_args):
+    trainer = SpPhoBERTTrainer(run_args)
+    trainer.train(train_path=run_args.train_path, valid_path=run_args.valid_path,
+                  types_path=run_args.types_path, input_reader_cls=input_reader.JsonInputReader)
+
+def _train_vn():
+    arg_parser = train_argparser()
+    process_configs(target=__train_vn, arg_parser=arg_parser)
 
 def _train():
     arg_parser = train_argparser()
@@ -35,6 +44,8 @@ if __name__ == '__main__':
 
     if args.mode == 'train':
         _train()
+    elif args.mode == "train_vn":
+        _train_vn()
     elif args.mode == 'eval':
         _eval()
     else:

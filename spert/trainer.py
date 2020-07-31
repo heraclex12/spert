@@ -8,8 +8,8 @@ from typing import List, Dict, Tuple
 import torch
 from torch.nn import DataParallel
 from torch.optim import Optimizer
-from transformers import PreTrainedModel
-from transformers import PreTrainedTokenizer
+from transformers_.src.transformers import PreTrainedModel
+from transformers_.src.transformers import PreTrainedTokenizer
 
 from spert import util
 from spert.opt import tensorboardX
