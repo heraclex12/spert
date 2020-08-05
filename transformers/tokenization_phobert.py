@@ -203,3 +203,12 @@ class PhobertTokenizer(PreTrainedTokenizer):
         """ Converts a list of tokens into a list of ids using the vocab."""
         tokens = " ".join(token)
         return self.vocab.encode_line(tokens, append_eos=False, add_if_not_exist=False).long().tolist()
+
+    def convert_ids_to_tokens(self, token_ids):
+        """ Converts a list of ids into a list of tokens using the vocab."""
+        return [self.vocab[token_id] for token_id in token_ids]
+
+    def decode(self, token_ids):
+        """ Converts a list of ids into a original string"""
+        subword_tokens = self.convert_ids_to_tokens(token_ids)
+        return " ".join(subword_tokens).replace("@@ ", "")
