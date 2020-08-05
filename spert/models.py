@@ -1,8 +1,8 @@
 import torch
 from torch import nn as nn
-from transformers_.src.transformers import BertConfig
-from transformers_.src.transformers import BertModel
-from transformers_.src.transformers import BertPreTrainedModel
+from transformers.src.transformers import BertConfig
+from transformers.src.transformers import BertModel
+from transformers.src.transformers import BertPreTrainedModel
 
 from spert import sampling
 from spert import util

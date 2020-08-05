@@ -1,8 +1,8 @@
 import torch
 from torch import nn as nn, Tensor
 import numpy as np
-from transformers_.src.transformers import BertPreTrainedModel
-from transformers_.src.transformers import PhobertConfig, PhobertModel, PhobertTokenizer
+from transformers.src.transformers import BertPreTrainedModel
+from transformers.src.transformers import PhobertConfig, PhobertModel, PhobertTokenizer
 from spert import sampling
 from spert import util
 
