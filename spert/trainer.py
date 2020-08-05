@@ -126,9 +126,6 @@ class BaseTrainer:
         else:
             model.save_pretrained(dir_path)
 
-        # save vocabulary
-        tokenizer.save_pretrained(dir_path)
-
         # save extra
         state_path = os.path.join(dir_path, 'extra.state')
         torch.save(extra_state, state_path)
