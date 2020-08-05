@@ -5,7 +5,7 @@ from logging import Logger
 from typing import Iterable, List
 
 from tqdm import tqdm
-from transformers.src.transformers import BertTokenizer, PhobertTokenizer
+from transformers import PhobertTokenizer
 
 from spert import util
 from spert.entities import Dataset, EntityType, RelationType, Entity, Relation, Document

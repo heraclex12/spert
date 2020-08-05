@@ -1,4 +1,4 @@
-from transformers.src.transformers import *
+from transformers import *
 
 tokenizer = PhobertTokenizer.from_pretrained("vinai/phobert-base")
 # encode = tokenizer.convert_ids_to_tokens([0])

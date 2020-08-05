@@ -6,9 +6,9 @@ import torch
 from torch.nn import DataParallel
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
-from transformers.src.transformers import AdamW
-from transformers.src.transformers import PhobertConfig, PhobertTokenizer
-from transformers.src.transformers import get_linear_schedule_with_warmup
+from transformers import AdamW
+from transformers import PhobertConfig, PhobertTokenizer
+from transformers import get_linear_schedule_with_warmup
 
 from spert import models
 from spert import sampling
