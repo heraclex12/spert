@@ -1,0 +1,1 @@
+{"entities": {"artwork": {"short": "artwork", "verbose": "artwork"}, "person": {"short": "person", "verbose": "person"}}, "relations": {"artwork": {"short": "artwork", "verbose": "artwork", "symmetric": false}}}

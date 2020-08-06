@@ -216,7 +216,7 @@ class SpPhoBert(BertPreTrainedModel):
 
         return batch_relations, batch_rel_masks, batch_rel_sample_masks
 
-    def forward(self, *args, evaluate=False, **kwargs):
+    def forward(self, *args, evaluate=True, **kwargs):
         if not evaluate:
             return self._forward_train(*args, **kwargs)
         else:

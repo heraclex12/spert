@@ -4,6 +4,7 @@ from torch.utils.data import Dataset as TorchDataset
 
 from spert import sampling
 
+import json
 
 class RelationType:
     def __init__(self, identifier, index, short_name, verbose_name, symmetric=False):
@@ -12,6 +13,10 @@ class RelationType:
         self._short_name = short_name
         self._verbose_name = verbose_name
         self._symmetric = symmetric
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=True, indent=4)
 
     @property
     def identifier(self):
@@ -51,6 +56,10 @@ class EntityType:
         self._index = index
         self._short_name = short_name
         self._verbose_name = verbose_name
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=True, indent=4)
 
     @property
     def identifier(self):

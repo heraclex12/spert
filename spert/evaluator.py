@@ -45,6 +45,78 @@ class Evaluator:
 
         self._convert_gt(self._dataset.documents)
 
+    def predict_batch(self, batch_entity_clf: torch.tensor, batch_rel_clf: torch.tensor,
+                   batch_rels: torch.tensor, batch: dict):
+        batch_size = batch_rel_clf.shape[0]
+        rel_class_count = batch_rel_clf.shape[2]
+
+        # get maximum activation (index of predicted entity type)
+        batch_entity_types = batch_entity_clf.argmax(dim=-1)
+        # apply entity sample mask
+        batch_entity_types *= batch['entity_sample_masks'].long()
+
+        batch_rel_clf = batch_rel_clf.view(batch_size, -1)
+
+        # apply threshold to relations
+        if self._rel_filter_threshold > 0:
+            batch_rel_clf[batch_rel_clf < self._rel_filter_threshold] = 0
+
+        for i in range(batch_size):
+            # get model predictions for sample
+            rel_clf = batch_rel_clf[i]
+            entity_types = batch_entity_types[i]
+
+            # get predicted relation labels and corresponding entity pairs
+            rel_nonzero = rel_clf.nonzero().view(-1)
+            rel_scores = rel_clf[rel_nonzero]
+
+            rel_types = (rel_nonzero % rel_class_count) + 1  # model does not predict None class (+1)
+            rel_indices = rel_nonzero // rel_class_count
+
+            rels = batch_rels[i][rel_indices]
+
+            # get masks of entities in relation
+            rel_entity_spans = batch['entity_spans'][i][rels].long()
+
+            # get predicted entity types
+            rel_entity_types = torch.zeros([rels.shape[0], 2])
+            if rels.shape[0] != 0:
+                rel_entity_types = torch.stack([entity_types[rels[j]] for j in range(rels.shape[0])])
+
+            # convert predicted relations for evaluation
+            sample_pred_relations = self._convert_pred_relations(rel_types, rel_entity_spans,
+                                                                 rel_entity_types, rel_scores)
+            # get entities that are not classified as 'None'
+            valid_entity_indices = entity_types.nonzero().view(-1)
+            valid_entity_types = entity_types[valid_entity_indices]
+            valid_entity_spans = batch['entity_spans'][i][valid_entity_indices]
+            valid_entity_scores = torch.gather(batch_entity_clf[i][valid_entity_indices], 1,
+                                               valid_entity_types.unsqueeze(1)).view(-1)
+
+            sample_pred_entities = self._convert_pred_entities(valid_entity_types, valid_entity_spans,
+                                                               valid_entity_scores)
+            if self._no_overlapping:
+                sample_pred_entities, sample_pred_relations = self._remove_overlapping(sample_pred_entities,
+                                                                                       sample_pred_relations)
+            #
+
+            result = list()
+            for sample in sample_pred_relations:
+                e1 = vars(sample[0][2])
+                e1["start"] = sample[0][0]
+                e1["end"] = sample[0][1]
+
+                e2 = vars(sample[1][2])
+                e2["start"] = sample[1][0]
+                e2["end"] = sample[1][1]
+
+                r = vars(sample[2])
+                score = sample[3]
+                result.append({"e1": e1, "e2": e2, "r": r, "score": score})
+            # print("relation: ", sample_pred_relations)
+            return result
+
+
     def eval_batch(self, batch_entity_clf: torch.tensor, batch_rel_clf: torch.tensor,
                    batch_rels: torch.tensor, batch: dict):
         batch_size = batch_rel_clf.shape[0]
@@ -86,7 +158,7 @@ class Evaluator:
             # convert predicted relations for evaluation
             sample_pred_relations = self._convert_pred_relations(rel_types, rel_entity_spans,
                                                                  rel_entity_types, rel_scores)
-
+            print(sample_pred_relations)
             # get entities that are not classified as 'None'
             valid_entity_indices = entity_types.nonzero().view(-1)
             valid_entity_types = entity_types[valid_entity_indices]

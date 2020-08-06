@@ -33,6 +33,10 @@ class BaseTrainer:
             self._save_path = os.path.join(self.args.save_path, self.args.label, name)
             util.create_directories_dir(self._save_path)
 
+        # if hasattr(args, 'model_path') and hasattr(args, 'config_path'):
+        #     self._model_path = self.args.model_path
+        #     self._config_path = self.args.config_path
+
         self._log_paths = dict()
 
         # file + console logging

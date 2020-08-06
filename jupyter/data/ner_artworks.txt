@@ -1,0 +1,330 @@
+sentence,artwork,person
+Thông điển là bộ sách lịch sử Trung Quốc thời nhà Đường của sử gia Đỗ Hựu.,Thông điển,Đỗ Hựu
+Vietnam Inc. là một cuốn sách ảnh được làm và xuất bản bởi Philip Jones Griffiths vào năm 1971.,Vietnam Inc.,Philip Jones Griffiths
+"Nho lâm ngoại sử hay còn gọi là Chuyện làng nho là tiểu thuyết chương hồi của Ngô Kính Tử thời nhà Thanh, toàn thư gồm 56 hồi, miêu tả gần hai trăm nhân vật mà hầu hết là nhà Nho, nội dung phê phán và châm biếm sâu cay chế độ khoa cử công danh thời nhà Thanh.",Nho lâm ngoại sử,Ngô Kính Tử
+"Bốn khúc tứ tấu – là một trường ca gồm 4 phần: ""Burnt Norton, East Coker, The Dry Salvages và Little Gidding "" của nhà thơ Mỹ đoạt giải Nobel Văn học năm 1948 T. S. Eliot.",Bốn khúc tứ tấu,T. S. Eliot
+"Ngồi khóc trên cây là một tiểu thuyết dành cho thanh thiếu niên của nhà văn Nguyễn Nhật Ánh, xuất bản lần đầu tại Việt Nam vào ngày 27 tháng 6 năm 2013 bởi Nhà xuất bản Trẻ, với phần tranh minh họa do Đỗ Hoàng Tường thực hiện.",Ngồi khóc trên cây,Nguyễn Nhật Ánh
+"""Ole Lukøje"" là một câu chuyện cổ tích văn học của Hans Christian Andersen dựa trên một câu chuyện dân gian của một sinh vật huyền thoại bí ẩn được gọi là Sandman, người nhẹ nhàng đưa những đứa trẻ vào giấc ngủ, và tùy thuộc vào đứa trẻ đó tốt hay xấu, ông cho chúng thấy những giấc mơ khác nhau.",Ole Lukøje,Hans Christian Andersen
+"Liễu Nghị truyện - hoặc Liễu Nghị truyền thư, Động Đình linh nhân truyện, Động Đình tình ký - là nhan đề một truyền kỳ của tác giả Lý Triều Uy, sáng tác khoảng triều Đường Cao Tông.",Liễu Nghị truyện,Lý Triều Uy
+"Mio, con trai ta là một tác phẩm của nhà văn Astrid Lindgren.","Mio, con trai ta",Astrid Lindgren
+"Những cuộc phiêu lưu của Pinocchio, được xuất bản năm 1883, là cuốn tiểu thuyết dành cho thiếu nhi của tác giả người Ý Carlo Lorenini dưới bút danh Carlo Collodi.",Những cuộc phiêu lưu của Pinocchio,Carlo Collodi
+"""Cuộc điều tra màu đỏ"""", tiếng Anh: A Study in Scarlet""') là một tiểu thuyết trinh thám của nhà văn người Scotland Arthur Conan Doyle.",Cuộc điều tra màu đỏ,Arthur Conan Doyle
+"Miếng da lừa là một tiểu thuyết của nhà văn Pháp Honoré de Balzac, được viết năm 1831 và tiếp sau cuốn ""Những người Chouan"".",Miếng da lừa,Honoré de Balzac
+"""Xa đám đông điên loạn"" là cuốn tiểu thuyết thứ tư, thành công đầu tiên của nhà văn Anh Thomas Hardy.",Xa đám đông điên loạn,Thomas Hardy
+Vốn thế kỉ 21 là một cuốn sách kinh tế học của Thomas Piketty.,Vốn thế kỉ 21,Thomas Piketty
+Đám mây mặc quần – là một trường ca nổi tiếng của nhà thơ Vladimir Vladimirovich Mayakovsky viết trong năm 1914 và Osip Brik phát hành lần đầu vào năm 1915.,Đám mây mặc quần,Vladimir Vladimirovich Mayakovsky
+Đến ngọn hải đăng là một cuốn tiểu thuyết xuất bản năm 1927 của tác giả Virginia Woolf.,Đến ngọn hải đăng,Virginia Woolf
+"Thiên thần và ác quỷ là tiểu thuyết khoa học giả tưởng được xuất bản lần đầu năm 2000 do nhà văn Mỹ Dan Brown, tác giả của ""Mật mã Da Vinci"", ""Pháo đài số"", ""Điểm dối lừa"" sáng tác.",Thiên thần và ác quỷ,Dan Brown
+"Anna Karenina là một tiểu thuyết của nhà văn Nga Lev Nikolayevich Tolstoy, được đăng tải nhiều kỳ trên tờ báo ""Ruskii Vestnik"" từ năm 1873 đến năm 1877 trước khi xuất bản thành ấn phẩm hoàn chỉnh.",Anna Karenina,Lev Nikolayevich Tolstoy
+Chuyện rừng xanh là một tuyển tập truyện ngắn của nhà văn người Anh Rudyard Kipling.,Chuyện rừng xanh,Rudyard Kipling
+Lửa và cuồng nộ: Bên trong tòa nhà Bạch ốc của Trump là một cuốn sách phi hư cấu sắp xuất bản viết bởi Michael Wolff.,Lửa và cuồng nộ,Michael Wolff
+"Bản tình ca của J. Alfred Prufrock, thường được gọi là Prufrock, là một bài thơ của nhà thơ Mỹ, T. S. Eliot, bắt đầu viết từ tháng 2 năm 1910, viết xong năm 1911 và in lần đầu ở tạp chí ""Poetry"" bốn năm sau đó.",Bản tình ca của J. Alfred Prufrock,T. S. Eliot
+Ichiban Ushiro no Daimaou là loạt light novel do Mizuki Shotaro thực hiện và minh họa bởi Itō Souichi.,Ichiban Ushiro no Daimaou,Mizuki Shotaro
+"Buổi chiều Windows là một tiểu thuyết dành cho thanh thiếu niên của nhà văn Nguyễn Nhật Ánh, sáng tác năm 1995, vào thời kỳ máy vi tính và hệ điệu hành Windows bắt đầu phổ biến ở Việt Nam.",Buổi chiều Windows,Nguyễn Nhật Ánh
+"""Crippled America: How to Make America Great Again "" là cuốn sách do Donald Trump viết và được xuất bản năm 2015.",Crippled America,Donald Trump
+"Gắng sống đến bình minh là một truyện vừa khai thác đề tài cuộc Chiến tranh Vệ quốc vĩ đại của nhà văn Vasil Bykaŭ, ra đời năm 1973.",Gắng sống đến bình minh,Vasil Bykaŭ
+"Trại hoa vàng là một truyện dài của nhà văn Nguyễn Nhật Ánh, được xuất bản năm 1994.",Trại hoa vàng,Nguyễn Nhật Ánh
+Cô gái chơi dương cầm là một tiểu thuyết của nữ văn sĩ người Áo Elfriede Jelinek.,Cô gái chơi dương cầm,Elfriede Jelinek
+Thám tử rời sân khấu là một tiểu thuyết hình sự của nhà văn Agatha Christie được hãng Collins Crime Club xuất bản lần đầu tại Anh tháng 9 năm 1975.,Thám tử rời sân khấu,Agatha Christie
+Chú chó gác sao là một manga Nhật Bản của họa sĩ Murakami Takashi.,Chú chó gác sao,Murakami Takashi
+"Người tá điền đồi Wildfell là tác phẩm nổi tiếng nhất của nhà văn Anh Anne Brontë, được xuất bản bởi Thomas Cautley Newby vào năm 1848 dưới bút danh Acton Bell.",Người tá điền đồi Wildfell,Anne Brontë
+"Fate/Zero là một light novel của Gen Urobuchi, Takeuchi Takashi minh họa, và là một tiền truyện thuộc tiểu thuyết ""Fate/stay Night"" của Type-Moon.",Fate/Zero,Gen Urobuchi
+"Nhật ký vũ trụ của Ion lặng lẽ là một tuyển tập truyện ngắn của nhà văn Stanisław Lem, nói về những cuộc phiêu lưu của nhà du hành vũ trụ Ion lặng lẽ.",Nhật ký vũ trụ của Ion Lặng Lẽ,Stanisław Lem
+"Balzac và cô bé thợ may Trung Hoa là một tiểu thuyết của nhà văn Đới Tư Kiệt, xuất bản năm 2000.",Balzac và cô bé thợ may Trung Hoa,Đới Tư Kiệt
+"Chinh phụ ngâm, còn có tên khác là Chinh phụ ngâm khúc là tác phẩm văn vần của Đặng Trần Côn, ra đời trong khoảng năm 1741 giai đoạn sơ kỳ Cảnh Hưng và về sau được nhiều người dịch ra thơ Nôm.",Chinh phụ ngâm,Đặng Trần Côn
+Anh chàng Hobbit là một tiểu thuyết hư cấu dành cho thiếu nhi của nhà văn J. R. R. Tolkien.,Anh chàng Hobbit,J. R. R. Tolkien
+Lịch sử suy tàn và sụp đổ của Đế quốc La Mã là một bộ sách về lịch sử Đế quốc La Mã gồm sáu quyển do sử gia Anh Edward Gibbon viết.,Lịch sử suy tàn và sụp đổ của Đế quốc La Mã,Edward Gibbon
+"Tam quốc diễn nghĩa, nguyên tên là ""Tam quốc chí thông tục diễn nghĩa"", là một tiểu thuyết lịch sử Trung Quốc được La Quán Trung viết vào thế kỷ 14 kể về thời kỳ hỗn loạn Tam Quốc với 120 chương hồi, theo phương pháp ""bảy thực ba hư"".",Tam quốc diễn nghĩa,La Quán Trung
+Cô bé bán diêm là truyện cổ tích do tác giả người Đan Mạch Hans Christian Andersen sáng tác.,Cô bé bán diêm,Hans Christian Andersen
+"Bọn làm bạc giả xuất bản năm 1925 là tiểu thuyết trinh thám nổi tiếng của André Gide, người đoạt giải Nobel Văn học năm 1947.",Bọn làm bạc giả,André Gide
+"Tuyết Sơn phi hồ là cuốn tiểu thuyết võ hiệp của Kim Dung, được đăng trên Minh báo vào năm 1959.",Tuyết sơn phi hồ,Kim Dung
+"Liễu Phàm Tứ Huấn là một tác phẩm được viết bởi Viên Liễu Phàm, sống trong thời nhà Minh, quê ở Gia Thiện, thuộc Chiết Giang, Trung Quốc vào khoảng năm 1550.",Liễu Phàm Tứ Huấn,Viên Liễu Phàm
+Hương thơm từ núi lạ là một tập truyện ngắn của Robert Olen Butler được xuất bản năm 1992.,Hương thơm từ núi lạ,Robert Olen Butler
+"Sống chết mặc bay là một tác phẩm của nhà văn Phạm Duy Tốn, được viết theo thể truyện ngắn hiện đại và đăng trên tạp chí Nam Phong số 18 tháng 12 năm 1918.",Sống chết mặc bay,Phạm Duy Tốn
+"Suy ngẫm về Triết học tiên khởi, với tựa đề con ""Chứng minh sự tồn tại của Chúa trời và sự khác biệt thực sự giữa tâm và thân"", là cuốn sách viết bởi René Descartes được xuất bản lần đầu năm 1641.",Suy ngẫm về Triết học Tiên khởi,René Descartes
+"Iga Nimpō-chō, tạm dịch: ""bí kiếp nhẫn pháp của Ninja Iga"" là tên một tác phẩm truyền kỳ, tiểu thuyết thời đại của nhà văn Nhật Bản Yamada Fūtarō.",Iga Nimpō-chō,Yamada Fūtarō
+"Moby Dick - Cá voi trắng là một tiểu thuyết phiêu lưu mạo hiểm của tác giả người Mỹ Herman Melville và được xuất bản lần đầu tiên vào năm 1851, được coi là một tiểu thuyết Mỹ vĩ đại và một kho tàng văn học thế giới.",Moby Dick,Herman Melville
+Oliver Twist là tiểu thuyết thứ hai của Charles Dickens.,Oliver Twist,Charles Dickens
+"Kim Vân Kiều là một tác phẩm tiểu thuyết chương hồi của Thanh Tâm Tài Nhân, tác giả đời nhà Minh, Trung Quốc biên soạn vào cuối thế kỷ 16 và đầu thế kỷ 17.",Kim Vân Kiều,Thanh Tâm Tài Nhân
+Người đàn bà quỷ quyệt là một tác phẩm ăn khách của nhà văn Hoa Kỳ Sidney Sheldon ra đời năm 1982.,Người đàn bà quỷ quyệt,Sidney Sheldon
+"Chiến tranh và hòa bình là nhan đề một tiểu thuyết của Lev Nikolayevich Tolstoy, xuất bản rải rác trong giai đoạn 1865–1869.",Chiến tranh và hòa bình,Lev Nikolayevich Tolstoy
+"Người đẹp say ngủ là tiểu thuyết dài 5 chương của văn hào Nhật Bản Kawabata Yasunari, được tác giả sáng tác dựa trên một kịch bản sân khấu kabuki nhan đề ""Những mỹ nữ của Eguchi"" công diễn khoảng thế kỷ 17 ở Nhật Bản.",Người đẹp say ngủ,Kawabata Yasunari
+"Những bóng người trên sân ga là một bài thơ hay do thi sĩ Nguyễn Bính sáng tác vào năm 1937 tại Hà Nội, Việt Nam.",Những bóng người trên sân ga,Nguyễn Bính
+Những cuộc phiêu lưu của Tintin là bộ truyện tranh nhiều tập do họa sĩ người Bỉ Georges Remi sáng tác dưới bút danh Hergé.,Những cuộc phiêu lưu của Tintin,Hergé
+Minh nho học án là tác phẩm sử học Trung Quốc đời Thanh của sử gia Hoàng Tông Hy.,Minh nho học án,Hoàng Tông Hy
+"Chúc một ngày tốt lành là tác phẩm của nhà văn chuyên viết truyện cho thiếu nhi Nguyễn Nhật Ánh, kể về cuộc sống hằng ngày của con người cũng như các con vật ở một làng quê.",Chúc một ngày tốt lành,Nguyễn Nhật Ánh
+"AQ chính truyện là truyện vừa duy nhất của Lỗ Tấn được đăng tải lần đầu trên ""Thần báo phó san"" ở Bắc Kinh trong khoảng thời gian từ 4 tháng 12 năm 1921 đến 12 tháng 2 năm 1922.",AQ chính truyện,Lỗ Tấn
+Từ điển Việt–Bồ–La là một cuốn từ điển bằng ba ngôn ngữ: Việt–Bồ Đào Nha–Latinh do nhà truyền giáo và nhà ngôn ngữ học Dòng Tên Alexandre de Rhodes biên soạn và được Thánh Bộ Truyền bá Đức Tin ấn hành tại Roma năm 1651.,Từ điển Việt–Bồ–La,Alexandre de Rhodes
+"Cô bé Fadette là tiểu thuyết tiêu biểu cho giai đoạn Đồng quê của nhà văn Pháp George Sand, được viết vào năm 1849.",Cô bé Fadette,George Sand
+"1Q84 là tên tiểu thuyết gồm 3 tập phát hành trong khoảng từ năm 2009 đến 2010 của nhà văn người Nhật, Murakami Haruki.",1Q84,Murakami Haruki
+Tên anh chưa có trong danh sách là một tiểu thuyết Liên Xô của nhà văn Boris Vasilyev được xuất bản lần đầu năm 1974.,Tên anh chưa có trong danh sách,Boris Vasilyev
+"Tống biệt là một bài từ nổi tiếng của Tản Đà, một thi nhân thời tiền chiến, Việt Nam.",Tống biệt,Tản Đà
+Mass Effect: Revelation là một tiểu thuyết khoa học viễn tưởng của Drew Karpyshyn.,Mass Effect: Revelation,Drew Karpyshyn
+"Rùa và Thỏ nằm trong tập Ngụ ngôn Aesop, và được đánh số 226 theo danh mục Perry.",Rùa và Thỏ,Aesop
+Lincoln in the Bardo là một cuốn tiểu thuyết thể nghiệm năm 2017 của nhà văn Mỹ George Saunders.,Lincoln in the Bardo,George Saunders
+Lolita là một tiểu thuyết của Vladimir Vladimirovich Nabokov.,Lolita,Vladimir Vladimirovich Nabokov
+"Tiếu ngạo giang hồ là một tiểu thuyết kiếm hiệp của Kim Dung, lần đầu tiên được phát hành trên Minh báo từ ngày 20 tháng 4 năm 1967 đến 12 tháng 10 năm 1969.",Tiếu ngạo giang hồ,Kim Dung
+"Dulce et Decorum est – là bài thơ của nhà thơ Anh Quốc Wilfred Owen viết năm 1917 và được công bố năm 1921, sau khi nhà thơ đã hy sinh tại một trận đánh vào năm 1918 trong cuộc Chiến tranh thế giới lần thứ nhất.",Dulce et Decorum Est,Wilfred Owen
+"Giữa miền đất ấy là tiểu thuyết của nhà văn Nam Phi John Maxwell Coetzee, được viết bằng tiếng Anh, xuất bản lần đầu tiên năm 1977.",Giữa miền đất ấy,John Maxwell Coetzee
+"Sách Xanh là một cuốn sách ngắn có nội dung về chính trị học của nhà lãnh đạo Libya, Muammar al-Gaddafi.",Sách Xanh,Muammar al-Gaddafi
+"Nhật ký chú bé nhút nhát là một series tiểu thuyết của tác giả Jeff Kinney, được nhen nhóm ý tưởng vào năm 1998 và sau đó 6 năm phiên bản đầu tiên đã được ra đời.",Nhật ký chú bé nhút nhát,Jeff Kinney
+"Lều chõng là một tiểu thuyết phóng sự của nhà văn Ngô Tất Tố, ra mắt độc giả lần đầu ngày 10 tháng 3 năm 1939 tại Hà Nội.",Lều chõng,Ngô Tất Tố
+"Đoàn hộ nhẫn là phần đầu tiên trong bộ tiểu thuyết giả tưởng ""Chúa tể những chiếc nhẫn của nhà văn J. R. R. Tolkien.",Đoàn hộ nhẫn,J. R. R. Tolkien
+"Quê hương tan rã là tiểu thuyết nổi tiếng của nhà văn người Nigeria, Chinua Achebe.",Quê hương tan rã,Chinua Achebe
+Nhật ký Anne Frank là một cuốn sách bao gồm các trích đoạn từ một cuốn nhật ký do Anne Frank viết trong khi cô bé đang trốn cùng gia đình trong thời kỳ Đức Quốc xã chiếm đóng Hà Lan.,Nhật ký Anne Frank,Anne Frank
+"Jane Eyre là cuốn tiểu thuyết của văn sĩ ""Charlotte Brontë"", được xuất bản bởi ""Smith, Elder & Company of London"" vào năm 1847 dưới bút danh Currer Bell, là một trong những tiểu thuyết có ảnh hưởng sâu sắc và nổi tiếng nhất của nền văn học Anh.",Jane Eyre,Charlotte Brontë
+Hai vạn dặm dưới biển: Du hành vào thế giới dưới nước là một cuốn tiểu thuyết cổ điển về khoa học viễn tưởng của nhà văn Pháp Jules Verne xuất bản năm 1870.,Hai vạn dặm dưới biển,Jules Verne
+53 trạm nghỉ của Tōkaidō là một bộ tranh màu truyền thống Nhật Bản gồm 55 bức được họa sĩ Hiroshige sáng tác sau chuyến du hành dọc tuyến đường Tōkaidō vào năm 1832.,53 trạm nghỉ của Tōkaidō,Hiroshige
+Maburaho là loạt light novel do Tsukiji Toshihiko thực hiện và Komatsu Eeji minh họa.,Maburaho,Tsukiji Toshihiko
+"Giết con chim nhại là cuốn tiểu thuyết của Harper Lee; đây là cuốn tiểu thuyết rất được yêu chuộng, thuộc loại bán chạy nhất thế giới với hơn 10 triệu bản.",Giết con chim nhại,Harper Lee
+Nhập môn Marx là một cuốn sách của Rius dưới hình thức truyện tranh hài giới thiệu về cuộc đời và hành trình tư tưởng của Karl Marx.,Nhập môn Marx,Rius
+"Thế giới của Sophie, với tựa đề con Một tiểu thuyết về lịch sử triết học, là một tiểu thuyết của nhà văn Jostein Gaarder.",Thế giới của Sophie,Jostein Gaarder
+"Trong Gia đình là một cuốn tiểu thuyết được xuất bản vào năm 1893 bởi Hector Malot, nguyên bản tiếng Pháp.",Trong gia đình,Hector Malot
+"Phía sau nghi can X là một bộ tiểu thuyết được viết vào năm 2005 bởi Higashino Keigo, cuốn thứ ba trong seri Thám tử Galileo và đây là tác phẩm thành công nhất của ông từ trước đến nay.",Phía sau nghi can X,Higashino Keigo
+"""Doraemon"" là tác phẩm của Fujiko Fujio, bút danh chung của hai họa sĩ manga Fujimoto Hiroshi và Abiko Motoo.",Doraemon,Fujiko Fujio
+Một chín tám tư là tên một tiểu thuyết dystopia phát hành năm 1949 của nhà văn người Anh George Orwell.,Một chín tám tư,George Orwell
+"Truyện kể Genji, là một trường thiên tiểu thuyết của nữ sĩ cung đình Nhật Bản có biệt danh là Murasaki Shikibu sống dưới trướng của thứ phi Akiko trong cung Fujitsubo, triều đại Thiên hoàng Nhất Điều, không rõ tên thật của bà là gì.",Truyện kể Genji,Murasaki Shikibu
+The Vegetarian là một tiểu thuyết ba phần Hàn Quốc do Han Kang sáng tác và xuất bản lần đầu vào năm 2007.,The Vegetarian,Han Kang
+"""Tác phẩm lần đầu tiên được ra mắt tại Trung Quốc, do nhà văn Hạ Lộ chuyển ngữ với tên gọi Chiến Tranh Ai Ca"" Nỗi buồn chiến tranh là một tiểu thuyết của nhà văn Bảo Ninh, xuất bản lần đầu năm 1987 và lập tức gây “bão” trên văn đàn Việt Nam ở đủ mọi khía cạnh khác nhau.",Nỗi buồn chiến tranh,Bảo Ninh
+"Pháo đài số là tiểu thuyết thể loại tình báo của tác giả người Mỹ Dan Brown, xuất bản năm 1998 bởi St. Martin's Press.",Pháo đài số,Dan Brown
+Mãi đừng xa tôi là một tiểu thuyết xuất bản năm 2005 của nhà văn người Anh gốc Nhật Kazuo Ishiguro.,Mãi đừng xa tôi,Kazuo Ishiguro
+Sidereus Nuncius là một chuyên luận thiên văn học ngắn của nhà khoa học người Ý Galileo Galilei.,Sidereus Nuncius,Galileo Galilei
+"Nếu em không phải một giấc mơ, còn có bản dịch khác mang tên Và nếu như chuyện này là có thật, là tiểu thuyết đầu tay của nhà văn Pháp Marc Levy, xuất bản năm 1999.",Nếu em không phải một giấc mơ,Marc Levy
+"Thiên đô chiếu tức Chiếu dời đô là một đoạn văn được Ngô Sĩ Liên ghi lại sớm nhất ở thế kỷ XV trong sách ""Đại Việt sử ký toàn thư"", bài văn này được cho rằng do vua Lý Thái Tổ ban hành vào mùa xuân năm 1010 để chuyển kinh đô của nước Đại Cồ Việt từ Hoa Lư ra thành Đại La.",Chiếu dời đô,Lý Thái Tổ
+Những cuộc phiêu lưu của Sherlock Holmes là loạt truyện xoay quanh nhân vật thám tử Sherlock Holmes và những vụ li kì do tác giả Arthur Conan Doyle khởi thảo năm 1855 và kết thúc vào năm 1925.,Những cuộc phiêu lưu của Sherlock Holmes,Arthur Conan Doyle
+", được cách điệu là BTOOOM!, là một seri manga Nhật Bản được viết và minh họa bởi Junya Inoue.",Btooom!,Junya Inoue
+Nadja là cuốn tiểu thuyết nổi tiếng của nhà văn người Pháp André Breton.,Nadja,André Breton
+Kattobi Itto / Buttobi Itto là một bộ truyện của tác giả Motoki Monma và xuất bản bởi nhà xuất bản Shueisha.,Kattobi Itto,Motoki Monma
+Murder in Mesopotamia là một tiểu thuyết hình sự của nhà văn Agatha Christie được nhà sách Collins Crime Club xuất bản lần đầu tại Anh ngày 6 tháng 7 năm 1936.,Murder in Mesopotamia,Agatha Christie
+"Bạch mã khiếu tây phong là một trong những tiểu thuyết võ hiệp của Kim Dung, xuất bản lần đầu vào năm 1962 trên Minh Báo.",Bạch mã khiếu tây phong,Kim Dung
+"Tess of the d'Urbervilles: A Pure Woman Faithfully Presented, ngoài ra còn được biết đến dưới các tựa ""Tess of the d'Urbervilles: A Pure Woman"", ""Tess of the d'Urbervilles"" hay chỉ ""Tess"" không, là một tiểu thuyết nổi tiếng của nhà văn Anh Thomas Hardy, được xuất bản lần đầu vào năm 1891.",Tess of the d'Urbervilles,Thomas Hardy
+"Chùm nho uất hận, còn có tên trên bản dịch là Chùm nho nổi giận hay Chùm nho phẫn nộ, là tiểu thuyết của văn hào John Steinbeck, bao gồm 30 chương, phản ánh những biến đổi sâu sắc trong nông thôn nước Mỹ khoảng những năm đầu thế kỷ 20 dưới ảnh hưởng mạnh mẽ của thời đại công nghiệp hóa.",Chùm nho uất hận,John Steinbeck
+"Tiên phong lên Mặt Trăng là tác phẩm khoa học viễn tưởng sáng tác bởi H. G. Wells, xuất bản năm 1901.",Tiên phong lên Mặt Trăng,H. G. Wells
+"Ở nơi quỷ sứ giặc non là sách có minh họa cho trẻ em học đọc viết năm 1963 bởi nhà văn, họa sĩ Mỹ Maurice Sendak, xuất bản lần đầu bởi Harper & Row.",Ở nơi quỷ sứ giặc non,Maurice Sendak
+"Ỷ Thiên Đồ Long ký, còn được dịch ra tiếng Việt là Cô gái Đồ Long, là một tiểu thuyết võ hiệp của nhà văn Kim Dung.",Ỷ Thiên Đồ Long ký,Kim Dung
+Ông già và Biển cả là một tiểu thuyết ngắn được Ernest Hemingway viết ở Cuba năm 1951 và xuất bản năm 1952.,Ông già và biển cả,Ernest Hemingway
+"Ngày hoàn hảo cho cá chuối là một truyện ngắn của tác giả người Mỹ J. D. Salinger, được in lần đầu tiên vào ấn phẩm 31 tháng 1 năm 1948 của tạp chí ""Người New York"".",Ngày hoàn hảo cho cá chuối,J. D. Salinger
+Những người trong cát là một tiểu thuyết kinh dị nói về Cthulhu Mythos của tác giả Adam Niswander.,Những người trong cát,Adam Niswander
+Bắt trẻ đồng xanh là tiểu thuyết đầu tay của nhà văn Mỹ J. D. Salinger.,Bắt trẻ đồng xanh,J. D. Salinger
+"Anh hùng xạ điêu là một trong những tiểu thuyết võ hiệp của Kim Dung được đánh giá cao, được ""Hương Cảng Thương Báo"" xuất bản năm 1957.",Anh hùng xạ điêu,Kim Dung
+"Bố của Simon là một truyện ngắn của nhà văn người Pháp Guy de Maupassant, được ra mắt lần đầu tiên năm 1879.",Bố của Simon,Guy de Maupassant
+"Lương thư là một sách lịch sử theo thể kỷ truyện trong 24 sách lịch sử Trung Quốc do Diêu Tư Liêm đời Đường kế thừa cha là Diêu Sát đời Trần viết và biên soạn vào năm Trinh Quán thứ 3, đến năm Trinh Quán thứ 10 thì hoàn thành.",Lương thư,Diêu Tư Liêm
+Người thí nghiệm là một tác phẩm khoa học của nhà khoa học người Ý Galileo Galilei.,Người thí nghiệm,Galileo Galilei
+Vụ ám sát ông Roger Ackroyd là một tiểu thuyết hình sự của nhà văn Agatha Christie được hãng William Collins & Sons xuất bản lần đầu tại Anh tháng 6 năm 1926.,Vụ ám sát ông Roger Ackroyd,Agatha Christie
+"Câu chuyện ba chiếc rìu là một trong những ngụ ngôn Aesop, đứng thứ 173 trong Perry Index.",Câu chuyện ba chiếc rìu,Aesop
+Demian: Câu chuyện tuổi trẻ của Emil Sinclair hay tựa khác Tuổi trẻ băn khoăn là một cuốn tiểu thuyết được chắp bút bởi Hermann Hesse.,Demian,Hermann Hesse
+Sophie và tên khổng lồ là cuốn sách dành cho thiếu nhi được phát hành năm 1982 do nhà văn người Anh Roald Dahl viết và minh họa bởi Quentin Blake.,Sophie và tên khổng lồ,Roald Dahl
+Tìm hiểu về bản chất và nguồn gốc của cải của các quốc gia là tác phẩm kinh điển của kinh tế chính trị do Adam Smith viết và xuất bản lần đầu năm 1776.,Tìm hiểu về bản chất và nguồn gốc của cải của các quốc gia,Adam Smith
+"Tống thư là một sách trong 24 sách lịch sử Trung Quốc, do Thẩm Ước người nhà Lương thời Nam triều viết và biên soạn.",Tống thư,Thẩm Ước
+"Xuất sư biểu là tên gọi hai bài biểu, Tiền xuất sư biểu và Hậu xuất sư biểu do Gia Cát Lượng viết ra để dâng lên Thục Hán Hậu chủ Lưu Thiện trước khi ông thân chinh dẫn quân đi Bắc phạt lần thứ nhất và lần thứ hai vào các năm 225 và 226 thời Tam Quốc.",Xuất sư biểu,Gia Cát Lượng
+Martin Eden là một trong những tiểu thuyết nổi tiếng nhất của Jack London.,Martin Eden,Jack London
+"Alexiad là một tác phẩm lịch sử và tiểu sử thời Trung Cổ được viết vào khoảng năm 1148, bởi nhà sử học và công chúa Đông La Mã Anna Komnene, con gái của Hoàng đế Alexios I Komnenos.",Alexiad,Anna Komnene
+"Sleeping Venus là một bức tranh được họa sĩ người Ý Giorgione sáng tác thời Phục hưng, trong khi cảnh quan và bầu trời, ngày nay được nhiều người được chấp nhận, được vẽ bởi Titian, và được hoàn thành năm 1510 sau cái chết của Giorgione.",Sleeping Venus,Giorgione
+"Ivanhoe là một cuốn tiểu thuyết hư cấu lịch sử của nhà văn Walter Scott xuất bản vào năm 1820, truyện kể về một hiệp sĩ thời Trung Cổ của nước Anh.",Ivanhoe,Walter Scott
+Lão Goriot là một tiểu thuyết xuất bản lần đầu năm 1835 của nhà văn Pháp Honoré de Balzac.,Lão Goriot,Honoré de Balzac
+Việt Nam vong quốc sử là một tác phẩm do Phan Bội Châu biên soạn bằng chữ Hán vào năm Ất Tỵ.,Việt Nam vong quốc sử,Phan Bội Châu
+Nanh Trắng là một cuốn tiểu thuyết của nhà văn Mỹ Jack London.,Nanh Trắng,Jack London
+Chí Phèo là một truyện ngắn nổi tiếng của nhà văn Nam Cao viết vào tháng 2 năm 1941.,Chí Phèo,Nam Cao
+"Umibe no Onnanoko là một manga Nhật Bản, được viết và minh họa bởi Asano Inio.",Umibe no Onnanoko,Asano Inio
+Tasogare Otome x Amnesia là loạt manga được thực hiện bởi Maybe.,Tasogare Otome x Amnesia,Maybe
+Đời nhẹ khôn kham là tiểu thuyết của nhà văn Milan Kundera viết năm 1982 và xuất bản lần đầu tiên năm 1984 tại Pháp.,Đời nhẹ khôn kham,Milan Kundera
+Sông Đông êm đềm là bộ tiểu thuyết vĩ đại nhất của nhà văn Nga Mikhail Aleksandrovich Sholokhov.,Sông Đông êm đềm,Mikhail Aleksandrovich Sholokhov
+Cánh buồm đỏ thắm là một câu chuyện lãng mạn dành cho lứa tuổi mới lớn của nhà văn Aleksandr Grin.,Cánh buồm đỏ thắm,Aleksandr Grin
+Cô bé Igraine không biết sợ là cuốn tiểu thuyết giả tưởng dành cho trẻ em của Cornelia Funke.,Cô bé Igraine không biết sợ,Cornelia Funke
+"Đại Việt sử lược, còn có tên là Việt sử lược, là một cuốn lịch sử Việt Nam viết bằng chữ Hán của một tác giả khuyết danh, ra đời vào thời nhà Trần.",Đại Việt sử lược,Khuyết danh
+"Ngôi sao bất tử, hay Tinh cầu là một truyện vừa khai thác đề tài cuộc Chiến tranh Vệ quốc vĩ đại của nhà văn Emmanuil Kazakevich, ra mắt lần đầu năm 1957.",Ngôi sao bất tử,Emmanuil Kazakevich
+Kämpfer là bộ light novel được viết bởi Tsukiji Toshihiko và minh họa bởi Senmu.,Kämpfer,Tsukiji Toshihiko
+"Đào hoa nguyên ký hay Đào hoa nguyên, là một trong những sáng tác nổi tiếng của Đào Tiềm, một danh sĩ trong lịch sử văn học cổ điển Trung Quốc.",Đào hoa nguyên ký,Đào Tiềm
+"Truyện cổ Caunterbury là nhan đề tuyển tập 24 giai thoại trào phúng được cho là của tác giả Geoffrey Chaucer, người đã cất công sưu tầm và biên soạn ở thời kỳ 1387 - 1400.",Truyện cổ Caunterbury,Geoffrey Chaucer
+Lửa trong thành phố sẩm tối là một cuốn tiểu thuyết khai thác đề tài cuộc chiến đấu của nhân dân Estonia chống lại ách chiếm đóng phát xít Đức trong Thế chiến II của nhà văn Eno Raud.,Lửa trong thành phố sẩm tối,Eno Raud
+Tắt đèn là một trong những tác phẩm văn học tiêu biểu nhất của nhà văn Ngô Tất Tố.,Tắt đèn,Ngô Tất Tố
+"Túp lều bác Tom, là một tiểu thuyết chống chế độ nô lệ tại Hoa Kỳ của nhà văn Harriet Beecher Stowe người Mỹ.",Túp lều bác Tom,Harriet Beecher Stowe
+Thiên long bát bộ là một tiểu thuyết võ hiệp của nhà văn Kim Dung.,Thiên long bát bộ,Kim Dung
+Phỏng vấn Ma cà rồng là một cuốn tiểu thuyết về ma cà rồng được Anne Rice viết vào năm 1973 và xuất bản năm 1976.,Phỏng vấn Ma cà rồng,Anne Rice
+"""Âm thanh và cuồng nộ"" xuất bản năm 1929 là tác phẩm nổi tiếng của William Faulkner là một trong những bậc thầy của văn học dòng ý thức.",Âm thanh và cuồng nộ,William Faulkner
+Buổi học cuối cùng là một truyện ngắn trong tuyển tập truyện Truyện kể ngày thứ hai của nhà văn Pháp Alphonse Daudet.,Buổi học cuối cùng,Alphonse Daudet
+"Cupid và Psyche là một câu chuyện có nguồn gốc từ Thần thoại La Mã nhưng trở thành nổi tiếng qua tác phẩm ""Con lừa vàng"" của nhà văn La Mã Lucius Apuleius Platonicus.",Cupid và Psyche,Apuleius
+Bác sĩ Jekyll và ông Hyde là một tác phẩm của Robert Louis Stevenson sáng tác năm 1886.,Bác sĩ Jekyll và ông Hyde,Robert Louis Stevenson
+Bí mật của Naoko là một tiểu thuyết của nhà văn Higashino Keigo.,Bí mật của Naoko,Higashino Keigo
+U mộng ảnh là tên một tập sách nổi tiếng của nhà văn Trương Triều đời Thanh.,U mộng ảnh,Trương Triều
+"Tân Nguyên sử là một sách lịch sử theo thể kỷ truyện trong 24 sách lịch sử Trung Quốc do Kha Thiệu Văn cuối thời Thanh đầu thời Dân Quốc viết và biên soạn, tới năm 1919 thì hoàn thành, bộ Tân Nguyên sử này ra đời nhằm sửa chữa những sai sót từ bộ Nguyên sử cũ, đến năm 1921 bộ sách được Tổng thống Trung Hoa Dân Quốc Từ Thế Xương công nhận là chính sử, đổi ""Nhị thập tứ sử"" thành ""Nhị thập ngũ sử"".",Tân Nguyên sử,Kha Thiệu Văn
+"Cuốn theo chiều gió, xuất bản lần đầu năm 1936, là một cuốn tiểu thuyết tình cảm của Margaret Mitchell, người đã dành giải Pulitzer với tác phẩm này năm 1937.",Cuốn theo chiều gió,Margaret Mitchell
+"Ways of Seeing là series truyền hình 4 tập, mỗi tập phim khoảng 30 phút, được xây dựng chủ yếu bởi tác giả John Berger và nhà sản xuất Mike Dibb.",Ways of Seeing,John Berger
+"Biểu tượng thất truyền, được viết với tên mã Chìa khóa Solomon, là tiểu thuyết xuất bản năm 2009 của tác giả người Mỹ Dan Brown.",Biểu tượng thất truyền,Dan Brown
+Đảo giấu vàng là một tiểu thuyết phiêu lưu viết cho thiếu niên của nhà văn người Scotland Robert Louis Stevenson mô tả một cuộc hành trình trên biển đi tìm kho báu của bọn cướp biển chôn giấu trên đảo của nhân vật chính là cậu bé Jim Hawkin.,Đảo giấu vàng,Robert Louis Stevenson
+", còn được biết đến với tên Giả kim thuật sư trong phiên bản manga Việt hóa, là một loạt manga viết và minh họa bởi Arakawa Hiromu.",Giả kim thuật sư,Arakawa Hiromu
+"Báu vật của đời, nguyên tác: ""Phong nhũ phì đồn"", là một tác phẩm nổi tiếng của nhà văn Trung Quốc Mạc Ngôn.",Báu vật của đời,Mạc Ngôn
+Bàn về chiến tranh là một tác phẩm lý luận quân sự về chiến tranh và chiến lược quân sự do tướng Carl von Clausewitz người nước Phổ viết.,Bàn về chiến tranh,Carl von Clausewitz
+"War and Cinema: The Logistics of Perception là một cuốn sách của Paul Virilio, bàn luận về mối quan hệ giữa hình ảnh và công nghệ chiến tranh.",War and Cinema,Paul Virilio
+Opticks là một cuốn sách bằng tiếng Anh của nhà triết học tự nhiên Isaac Newton xuất bản vào năm 1704.,Opticks,Isaac Newton
+"Tiếng Việt giàu đẹp là tên một bộ sách tổng hợp các bài viết về bản chất, vẻ đẹp, thực trạng và cách rèn luyện tiếng Việt của nhiều tác giả và được phát hành bởi nhà xuất bản Trẻ.",Tiếng Việt giàu đẹp,Nhiều tác giả
+Vụ án bí ẩn ở Styles là tiểu thuyết hình sự đầu tay của nhà văn trinh thám Anh Agatha Christie.,Vụ án bí ẩn ở Styles,Agatha Christie
+"Pendragon là bộ truyện giả tưởng gồm 10 tập của nhà văn D. J. MacHale, với nhận vật chính là Bobby Pendragon, và hai người bạn thân nhất là Mark Dimond và Courtney Chetwynde, có sứ mệnh cứu vũ trụ gọi là Halla.",Pendragon,D. J. MacHale
+Eugénie Grandet là một tiểu thuyết của Honoré de Balzac.,Eugénie Grandet,Honoré de Balzac
+"Hậu cung Chân Huyên truyện là một tiểu thuyết chương hồi thể loại cổ trang, cung đấu của tác giả Lưu Liễm Tử, gồm 7 tập.",Hậu cung Chân Huyên truyện,Lưu Liễm Tử
+"Lục Thao, còn gọi là Lược Thao, Thái công lục thao hoặc Thái công binh pháp là một tác phẩm binh pháp tương truyền do Khương Tử Nha đầu đời nhà Chu sáng tác.",Lục Thao,Khương Tử Nha
+Sự sụp đổ của dòng họ Usher là một truyện ngắn tường thuật của nhà văn người Mỹ Edgar Allan Poe.,Sự sụp đổ của dòng họ Usher,Edgar Allan Poe
+Chống Dühring hay tên khác là Ông Eugen Dühring đã đảo lộn khoa học là một trong những tác phẩm nổi tiếng nhất của Friedrich Engels.,Chống Dühring,Friedrich Engels
+Truyện ông lão đánh cá và con cá vàng là một sử thi của Aleksandr Sergeyevich Pushkin viết vào mùa thu năm 1833.,Truyện ông lão đánh cá và con cá vàng,Aleksandr Sergeyevich Pushkin
+"Đoạn trường tân thanh, thường được biết đến đơn giản là Truyện Kiều, là một truyện thơ của thi sĩ Nguyễn Du.",Truyện Kiều,Nguyễn Du
+"Suối nguồn là một tiểu thuyết thuộc hàng best-seller, xuất bản năm 1943 của nhà văn nữ Ayn Rand.",Suối nguồn,Ayn Rand
+"Viên Mỡ Bò là một truyện ngắn của Guy de Maupassant, được viết vào năm 1879.",Viên Mỡ Bò,Guy de Maupassant
+"Hiệp khách hành là một trong những tiểu thuyết võ hiệp của Kim Dung, được phát hành trên Minh báo vào năm 1965.",Hiệp khách hành,Kim Dung
+"Zarathustra đã nói như thế, với phụ đề ""Một cuốn sách dành cho mọi người và không ai cả"", là một tác phẩm của triết gia người Đức Friedrich Nietzsche, gồm có bốn phần được viết giữa năm 1883 và năm 1885.",Zarathustra đã nói như thế,Friedrich Nietzsche
+"Bình Ngô đại cáo là bài cáo viết bằng văn ngôn do Nguyễn Trãi soạn thảo vào mùa xuân năm 1428, thay lời Bình Định Vương Lê Lợi để tuyên cáo về việc giành chiến thắng trong cuộc kháng chiến với nhà Minh, khẳng định sự độc lập của nước Đại Việt.",Bình Ngô đại cáo,Nguyễn Trãi
+"Was es ist là một bài thơ tình của nhà thơ Áo Erich Fried, được dùng làm tựa cho tập thơ ""Es ist was es ist"", xuất bản 1983.",Was es ist,Erich Fried
+Lão Hạc là một truyện ngắn của nhà văn Nam Cao được viết năm 1943.,Lão Hạc,Nam Cao
+"From Dictatorship to Democracy là cuốn sách do giáo sư Gene Sharp viết cho phong trào dân chủ Miến Điện vào năm 1993, sau khi bà Aung San Suu Kyi bị cầm tù.",From Dictatorship to Democracy,Gene Sharp
+Cuộc đời mới – là một tác phẩm của Dante Alighieri viết trong các năm 1283 – 1293.,Cuộc đời mới,Dante Alighieri
+"Beobachtungen über das Gefühl des Schönen und Erhabenen, là một cuốn sách năm 1764 bởi Immanuel Kant.",Beobachtungen über das Gefühl des Schönen und Erhabenen,Immanuel Kant
+A Peace to End All Peace là cuốn sách lịch sử của David Fromkin xuất bản năm 1989 đã lọt vào vòng chung kết giải Pulitzer.,A Peace to End All Peace,David Fromkin
+"Phi hồ ngoại truyện là một trong những tiểu thuyết võ hiệp của Kim Dung, ra mắt lần đầu tiên vào năm 1960 trong tạp chí ""Võ thuật và Lịch sử""",Phi hồ ngoại truyện,Kim Dung
+Lộc Đỉnh ký hay Lộc Đỉnh Công là cuốn tiểu thuyết cuối cùng của Kim Dung.,Lộc Đỉnh ký,Kim Dung
+Phù Thủy xui xẻo là một bộ truyện dành cho trẻ em được viết và minh họa bởi chính tác giả Jill Murphy.,Phù thủy xui xẻo,Jill Murphy
+"Mao chủ tịch ngữ lục, còn được gọi là Mao Trạch Đông ngữ lục hoặc gọi tắt là Mao ngữ lục, là sách tuyển biên một số câu nói trong trước tác của Mao Trạch Đông.",Mao chủ tịch ngữ lục,Mao Trạch Đông
+Chú lính chì dũng cảm là truyện cổ tích do tác giả người Đan Mạch là Hans Christian Andersen sáng tác.,Chú lính chì dũng cảm,Hans Christian Andersen
+"Gió Đông gió Tây là tiểu thuyết đầu tay của Pearl S. Buck, được xuất bản năm 1930.",Gió Đông gió Tây,Pearl S. Buck
+"Đông Chu liệt quốc chí là tiểu thuyết lịch sử gồm 108 hồi được Sái Nguyên Phóng thời Thanh cải biên từ ""Tân liệt quốc chí"" khoảng trên 700.000 chữ của Phùng Mộng Long thời Minh mạt.",Đông Chu liệt quốc,Phùng Mộng Long
+Bác sĩ Zhivago là tiểu thuyết nổi tiếng của nhà văn Nga–Xô viết Boris Leonidovich Pasternak.,Bác sĩ Zhivago,Boris Leonidovich Pasternak
+Faar-thành phố mất tích là quyển sách thứ hai của bộ truyện Pendragon viết bởi D. J. MacHale.,Faar-thành phố mất tích,D. J. MacHale
+"Bích huyết kiếm là một tiểu thuyết võ hiệp của nhà văn Kim Dung, được đăng lần đầu tiên trên Hương Cảng thương báo từ ngày 1 tháng 1 năm 1956 đến ngày 31 tháng 12 năm 1956.",Bích huyết kiếm,Kim Dung
+Võ lâm ngoại sử là một cuốn tiểu thuyết của nhà văn quá cố Cổ Long.,Võ lâm ngoại sử,Cổ Long
+"Kiếp Đi Ở, là một tiểu thuyết của nhà văn người Pháp Octave Mirbeau.",Kiếp đi ở,Octave Mirbeau
+"Tứ quái TKKG là bộ truyện trinh thám về 1 nhóm thiếu niên 4 người bao gồm Peter Carsten, Karl Vierstein, Willi Sauerlich và Gaby Glockner của tác giả Rolf Kalmuczak, với bút danh Stefan Wolf do Nhà xuất bản Pelikan, Hannover, Đức ấn hành lần đầu tiên năm 1979.",Tứ quái TKKG,Rolf Kalmuczak
+"Rita Hayworth and Shawshank Redemption là một tiểu thuyết ngắn của Stephen King, được in trong tập truyện ""Different Seasons"" với nhan đề phụ là ""Hope Springs Eternal"".",Rita Hayworth and Shawshank Redemption,Stephen King
+Kiêu hãnh và định kiến là tác phẩm nổi tiếng nhất của nhà văn Anh Jane Austen.,Kiêu hãnh và định kiến,Jane Austen
+"Nam Tề thư là một sách lịch sử theo thể kỷ truyện trong 24 sách lịch sử Trung Quốc do Tiêu Tử Hiển đời Lương viết và biên soạn, tên nguyên gốc là Tề thư, đến thời Tống, để phân biệt với Bắc Tề thư của Lý Bách Dược nên đổi tên thành Nam Tề thư.",Nam Tề thư,Tiêu Tử Hiển
+Con buôn tử thần là tập đầu tiên bộ truyện Pendragon của nhà văn D. J. MacHale.,Con buôn tử thần,D. J. MacHale
+Bức chân dung của Dorian Gray là tiểu thuyết duy nhất của nhà văn người Ireland Oscar Wilde và được in thành sách kể từ năm 1891.,Bức chân dung của Dorian Gray,Oscar Wilde
+"Những người khốn khổ là tiểu thuyết của văn hào Pháp Victor Hugo, được xuất bản năm 1862.",Những người khốn khổ,Victor Hugo
+Người thầy dạy đánh kiếm là một cuốn tiểu thuyết của Alexandre Dumas.,Người thầy dạy đánh kiếm,Alexandre Dumas
+"Hậu Hán Thư là một trong những tác phẩm lịch sử chính thức của Trung Quốc do Phạm Diệp biên soạn vào thế kỷ thứ 5, sử dụng một số cuốn sách sử và văn bản trước đó làm nguồn thông tin.",Hậu Hán thư,Phạm Diệp
+"Ngụ ngôn Aesop là tập truyện ngụ ngôn được cho là do Aesop, một nhà văn Hy Lạp cổ đại sáng tác.",Ngụ ngôn Aesop,Aesop
+"Kinh Lễ hay còn gọi là Lễ ký là một quyển trong bộ Ngũ Kinh của Khổng Tử, tương truyền do các môn đệ của Khổng Tử thời Chiến quốc viết, ghi chép các lễ nghi thời trước.",Kinh Lễ,Khổng Tử
+"Narratio Prima, tiêu đề chính thức là De libris revolutionum Copernici narratio prima la một bản tóm tắt lại thuyết nhật tâm của Nicolaus Copernicus được viết bởi Georg Joachim Rheticus vào năm 1540.",Narratio prima,Georg Joachim Rheticus
+"Bồ câu không đưa thư là truyện dài gồm 14 chương thuộc thể loại truyện học đường của nhà văn Nguyễn Nhật Ánh, lần đầu ra mắt độc giả vào năm 1993.",Bồ câu không đưa thư,Nguyễn Nhật Ánh
+"Không gia đình, còn được dịch là Vô gia đình, có thể được xem là tiểu thuyết nổi tiếng nhất của nhà văn Pháp Hector Malot, được xuất bản năm 1878.",Không gia đình,Hector Malot
+Berserk là bộ manga giả tưởng đen tối do Kentaro Miura vẽ và viết kịch bản.,Berserk,Kentaro Miura
+"Tu viện thành Pacmơ là một trong hai kiệt tác của Stendhal, cùng với kiệt tác kia là ""Đỏ và đen"".",Tu viện thành Pacmơ,Stendhal
+Nguyên sử là một tác phẩm do Tống Liêm và một số quan lại khác phụng mệnh Minh Thái Tổ Chu Nguyên Chương biên soạn năm 1370.,Nguyên sử,Tống Liêm
+"Bà Bovary là một cuốn tiểu thuyết của nhà văn Gustave Flaubert, được đánh giá là trau chuốt về nghệ thuật và hình thức.",Bà Bovary,Gustave Flaubert
+"Chuỗi án mạng A.B.C là một tác phẩm truyện hư cấu trinh thám của nhà văn Anh Agatha Christie, với các nhân vật Hercule Poirot, Arthur Hastings và Chief Inspector Japp, khi họ đấu tranh với một loạt vụ giết người bởi một kẻ giết người bí ẩn chỉ được biết đến với cái tên ""A.B.C"".",Chuỗi án mạng A.B.C,Agatha Christie
+Luận về sự hiểu biết của con người là tác phẩm của John Locke về nền tảng hiểu biết và kiến thức của con người.,Luận về sự hiểu biết của con người,John Locke
+Những cuộc phiêu lưu của Huckleberry Finn là tiểu thuyết được xuất bản năm 1884 của nhà văn Mỹ Mark Twain.,Những cuộc phiêu lưu của Huckleberry Finn,Mark Twain
+"Makamisa là một cuốn tiểu thuyết chưa được hoàn thành của nhà văn, nhà yêu nước José Rizal.",Makamisa,José Rizal
+Học viện của Ngài Kleks là một cuốn truyện hài hước dành cho trẻ em của nhà văn Jan Brzechwa.,Học viện của Ngài Kleks,Jan Brzechwa
+"Bí mật của Nicholas Flamel bất tử là bộ tiểu thuyết kỳ ảo dài sáu tập được sáng tác bởi nhà văn người Ireland Michael Scott, hoàn tất vào năm 2012.",Bí mật của Nicholas Flamel bất tử,Michael Scott
+"Dụ chư tỳ tướng hịch văn, thường được gọi là Hịch tướng sĩ, là bài hịch viết bằng văn ngôn của Trần Hưng Đạo viết cuối thế kỷ 13 trước cuộc chiến tranh Mông Nguyên–Đại Việt lần 2.",Hịch tướng sĩ,Trần Hưng Đạo
+Đồi gió hú là tiểu thuyết duy nhất của nữ nhà văn Emily Brontë.,Đồi gió hú,Emily Brontë
+Kira-kira là tiểu thuyết đoạt giải thưởng đóng góp xuất sắc nhất cho văn học thiếu nhi Mỹ năm 2005 của nữ nhà văn trẻ Cynthia Kadohata.,Kira-kira,Cynthia Kadohata
+Hội chợ phù hoa : Cuốn tiểu thuyết không có Anh hùng là một cuốn tiểu thuyết của William Makepeace Thackeray châm biếm xã hội vào đầu thế kỷ 19 ở Anh.,Hội chợ phù hoa,William Makepeace Thackeray
+"Những ngọn cờ trên tháp là một cuốn tiểu thuyết tâm lý giáo dục của nhà văn Anton Makarenko, ra đời năm 1938.",Những ngọn cờ trên tháp,Anton Makarenko
+"Truyện Lục Vân Tiên là một tác phẩm truyện thơ Nôm nổi tiếng của Nguyễn Đình Chiểu, được sáng tác theo thể lục bát vào đầu những năm 50 của thế kỷ 19 và được Trương Vĩnh Ký cho xuất bản lần đầu tiên vào năm 1889.",Lục Vân Tiên,Nguyễn Đình Chiểu
+"Khổng Ất Kỷ là tên một truyện ngắn của nhà văn Lỗ Tấn, cũng là tên nhân vật chính của truyện.",Khổng Ất Kỷ,Lỗ Tấn
+Tôi Là Bêtô là tác phẩm của nhà văn chuyên viết cho thanh thiếu niên Nguyễn Nhật Ánh.,Tôi là Bêtô,Nguyễn Nhật Ánh
+"Tấn thư là một sách trong 24 sách lịch sử Trung Quốc, do Phòng Huyền Linh và Lý Diên Thọ phụng mệnh Đường Thái Tông biên soạn vào năm 648.",Tấn thư,Phòng Huyền Linh
+Chú vịt con xấu xí là một truyện thần kỳ dành cho trẻ em của nhà văn người Đan Mạch Hans Christian Andersen.,Chú vịt con xấu xí,Hans Christian Andersen
+"Phế tích vòng tròn là một truyện ngắn kì huyễn của nhà văn và nhà thơ người Argentina Jorge Luis Borges, được đăng trên tờ báo El Sur tháng 12 năm 1940.",Phế tích vòng tròn,Jorge Luis Borges
+"Giáo dục tình cảm là tiểu thuyết cuối cùng của Gustave Flaubert được xuất bản trong đời ông, và được xem là một trong những tiểu thuyết gây ảnh hưởng nhất thế kỷ 19, theo đánh giá của George Sand, Emile Zola và Henry James.",Giáo dục tình cảm,Gustave Flaubert
+"Miles to Go là một cuốn tự truyện của Miley Cyrus viết với Hilary Liftin, do Disney-Hyperion Books xuất bản vào tháng 3 năm 2009.",Miles to Go,Hilary Liftin
+"Đỏ và đen là tiểu thuyết đầu tiên của Stendhal, được xuất bản vào năm 1830.",Đỏ và đen,Stendhal
+Đàn hương hình là một tiểu thuyết nổi tiếng của nhà văn Mạc Ngôn.,Đàn hương hình,Mạc Ngôn
+"Chu thư hay còn gọi là Bắc Chu thư hoặc Hậu Chu thư là một sách lịch sử theo thể kỷ truyện trong 24 sách lịch sử Trung Quốc do Lệnh Hồ Đức Phân đời Đường làm chủ biên, cùng Sầm Văn Bản và Thôi Nhân Sư tham gia viết và biên soạn chung vào năm Trinh Quán thứ 3, đến năm Trinh Quán thứ 10 thì hoàn thành.",Chu thư,Lệnh Hồ Đức Phân
+Tân Ngũ Đại sử là một sách lịch sử theo thể kỷ truyện trong 24 sách lịch sử Trung Quốc do Âu Dương Tu thời Bắc Tống biên soạn.,Tân Ngũ Đại sử,Âu Dương Tu
+Án mạng đêm giáng sinh là một tiểu thuyết hình sự của nhà văn Agatha Christie được nhà sách Collins Crime Club xuất bản lần đầu tại Anh ngày 19 tháng 12 năm 1938 và được đăng ký bản quyền năm 1939.,Án mạng đêm giáng sinh,Agatha Christie
+"Những cuộc phiêu lưu của Tom Sawyer là một quyển tiểu thuyết được nhà văn Mark Twain viết với bút pháp độc đáo, miêu tả tâm lý, cử chỉ, hành động của một chú bé sống tại một ngôi làng nghèo bên sông Mississippi.",Những cuộc phiêu lưu của Tom Sawyer,Mark Twain
+A Wind in the Door là một cuốn tiểu thuyết khoa học viễn tưởng dành cho thanh thiếu niên do Madeleine L'Engle sáng tác.,A Wind in the Door,Madeleine L'Engle
+Lý trí và Tình cảm là một tiểu thuyết của nhà văn Anh Jane Austen.,Lý trí và tình cảm,Jane Austen
+"Liêu Trai chí dị, với ý nghĩa là những chuyện quái dị chép ở căn nhà tạm, là tập truyện ngắn gồm 431 thiên, ra đời vào đầu đời nhà Thanh của nhà văn Trung Quốc Bồ Tùng Linh.",Liêu trai chí dị,Bồ Tùng Linh
+"Những kẻ thiện tâm là tên tiếng Việt của cuốn tiểu thuyết viết bằng tiếng Pháp ""Les Bienveillantes"" của nhà văn Mỹ Jonathan Littell.",Những kẻ thiện tâm,Jonathan Littell
+Anne tóc đỏ dưới Chái nhà xanh là tiểu thuyết đầu tay của nhà văn người Canada Lucy Maud Montgomery và tập đầu của serie loạt truyện gồm 8 tập.,Anne tóc đỏ dưới chái nhà xanh,Lucy Maud Montgomery
+"Nhật ký trong tù là tập thơ chữ Hán gồm 133 bài theo thể Đường luật do Hồ Chí Minh sáng tác trong thời gian bị chính quyền Tưởng Giới Thạch bắt giam ở Quảng Tây, Trung Quốc, từ ngày 29 tháng 8 năm 1942 đến ngày 10 tháng 9 năm 1943.",Nhật ký trong tù,Hồ Chí Minh
+"Vân Trung Ca, là một cuốn tiểu thuyết của nhà văn Trung Quốc Đồng Hoa được xuất bản vào năm 2007 bởi nhà xuất bản Nhà văn.",Vân trung ca,Đồng Hoa
+"La Belle Dame sans Merci – là một bài ballad của nhà thơ lãng mạn Anh, John Keats.",La Belle Dame sans Merci,John Keats
+"Đặt cược sinh mạng, hay còn dịch là Trò chơi Quillan, là cuốn chuyện thứ bảy trong bộ chuyện Pendragon của tác giả D. J. MacHale, những diễn biến xảy ra trên cuốn truyện này diễn biến tiếp theo của cuốn Những dòng sông Zadaa.",Đặt cược sinh mạng,D. J. MacHale
+]Đường công danh của Nikodem Dyzma là một cuốn tiểu thuyết ra đời và bán chạy nhất năm 1932 của nhà văn Ba Lan Tadeusz Dołęga-Mostowicz.,Đường công danh của Nikodem Dyzma,Tadeusz Dołęga-Mostowicz
+Ly hương tìm quá khứ là cuốn thứ tám trong bộ truyện Pendragon của tác giả D. J. MacHale.,Ly hương tìm quá khứ,D. J. MacHale
+"Cái mặt không chơi được là một truyện ngắn khá nổi tiếng của Nam Cao, được viết trong giai đoạn sung sức nhất của nhà văn.",Cái mặt không chơi được,Nam Cao
+Tiếng gọi nơi hoang dã là một tiểu thuyết của nhà văn Mỹ Jack London.,Tiếng gọi nơi hoang dã,Jack London
+Vợ nhặt là một tác phẩm văn học của nhà văn Kim Lân viết về thời kỳ xảy ra nạn đói năm 1945.,Vợ nhặt,Kim Lân
+"Cây đàn Mandolin của Đại úy Corelli, xuất bản tại Mỹ với tên Cây đàn Mandolin của Corelli, xuất bản năm 1994 bởi Louis de Bernières, câu chuyện diễn ra tại đảo Cephalonia thuộc Hy Lạp trong thời gian chiếm đóng của quân đội Đức và Ý trong chiến tranh thế giới thứ 2.",Cây đàn Mandolin của Đại úy Corelli,Louis de Bernières
+"Ngàn mặt trời rực rỡ là tiểu thuyết thứ hai phát hành năm 2007 của nhà văn Khaled Hosseini, một người Mĩ gốc Afghanistan.",Ngàn mặt trời rực rỡ,Khaled Hosseini
+Garfield là một bộ truyện tranh được nghiệp đoàn bảo hộ phát hành hàng ngày của tác giả Jim Davis.,Garfield,Jim Davis
+Con cáo và chùm nho là truyện ngụ ngôn của Aesop.,Con cáo và chùm nho,Aesop
+Điểm dối lừa là một tiểu thuyết khoa học giả tưởng do nhà văn Mỹ Dan Brown viết.,Điểm dối lừa,Dan Brown
+"Laudato si' là một thông điệp của Giáo hoàng Phanxicô, trong đó ông phê bình chủ nghĩa tiêu thụ và việc phát triển vô trách nhiệm, kêu gọi ""toàn cầu hành động nhanh chóng và thống nhất"" để chống suy thoái môi trường và biến đổi khí hậu.",Laudato si',Giáo hoàng Phanxicô
+Bài thơ về tiểu đội xe không kính là bài thơ của tác giả Phạm Tiến Duật.,Bài thơ về tiểu đội xe không kính,Phạm Tiến Duật
+Aeneis là sử thi tiếng Latinh do Vergilius sáng tác vào giữa năm 29 TCN và năm 19 TCN.,Aeneis,Vergilius
+Oyasumi Punpun là một manga Nhật Bản do Asano Inio viết và vẽ minh họa; xuất bản từ giữa tháng 3 năm 2007 đến tháng 11 năm 2013.,Oyasumi Punpun,Asano Inio
+"Hãy kể giấc mơ của em là một tiểu thuyết của nhà văn Mỹ Sidney Sheldon, xuất bản lần đầu tiên năm 1998.",Hãy kể giấc mơ của em,Sidney Sheldon
+Nếu một đêm đông có người lữ khách là một cuốn tiểu thuyết của nhà văn người Ý Italo Calvino xuất bản năm 1979.,Nếu một đêm đông có người lữ khách,Italo Calvino
+"Cuộc đời các danh nhân Hy Lạp và La Mã, còn gọi là Tiểu sử song đôi là một tác phẩm nổi tiếng của Plutarchus viết về cuộc đời các nhân việt kiệt xuất thời Hy Lạp - La Mã cổ đại.",Cuộc đời các danh nhân Hy Lạp và La Mã,Plutarchus
+"Chuyện xứ Lang Biang là một bộ truyện dài gồm 4 phần của nhà văn viết cho thiếu nhi nổi tiếng Nguyễn Nhật Ánh, được xuất bản những tập đầu tiên vào năm 2004 và kết thúc vào tháng 8 năm 2006.",Chuyện xứ Lang Biang,Nguyễn Nhật Ánh
+"Toaru Kagaku no Railgun là loạt manga do Kamachi Kazuma thực hiện và Fuyukawa Motoi minh họa, đây là ngoại truyện của loạt tiểu thuyết ""Toaru Majutsu no Index"".",Toaru Kagaku no Railgun,Kamachi Kazuma
+"Tùy thư là một sách lịch sử theo thể kỷ truyện trong 24 sách lịch sử Trung Quốc do nhóm sử quan Ngụy Trưng đời Đường biên soạn, thời Tùy Văn Đế, Vương Thiệu đã soạn thành sách ""Tùy thư"" gồm 80 quyển.",Tùy thư,Ngụy Trưng
+Bà chúa Tuyết hay còn gọi là Nữ chúa Tuyết là một câu chuyện cổ tích đặc sắc của nhà văn người Đan Mạch Hans Christian Andersen.,Bà chúa Tuyết,Hans Christian Andersen
+"Liêu sử là một bộ sách lịch sử trong 24 bộ sách sử của Trung Quốc, tổng cộng có 116 quyển kể lại các sự kiện lịch sử từ khi ra đời đến khi diệt vong của nhà Liêu do Thoát Thoát làm tổng tài chủ trì việc biên soạn và thu thập sử liệu, đảm nhiệm việc biên soạn chung với ông là 4 người gồm Liêm Huệ Sơn Hải Nha, Vương Nghi, Từ Bính, Trần Dịch Tăng, ngoài ra Thoát Thoát còn tham khảo các sách sử khác như """"Khiết Đan truyện"""" trong cuốn """"Khiết Đan quốc chí"""" và """"Tư trị thông giám"""", """"Liêu sử"""" của Trần Đại Nhiệm, """"Thực lục"""" của Gia Luật Nghiễm.",Liêu sử,Thoát Thoát
+Touch là một bộ manga về bóng chày trung học của Adachi Mitsuru.,Touch,Adachi Mitsuru
+O du kích nhỏ hay Giải giặc lái Mỹ là một tác phẩm nhiếp ảnh Việt Nam của nghệ sĩ Phan Thoan thực hiện vào ngày 21 tháng 9 năm 1965.,O du kích nhỏ,Phan Thoan
+"The Pilgrim's Progress from This World, to That Which Is to Come là một phúng dụ Kitô giáo được John Bunyan sáng tác năm 1678.",The Pilgrim's Progress,John Bunyan
+"Các anh hùng của đỉnh Olympus là bộ tiểu thuyết giả tưởng dành cho thiếu niên gồm năm tập của tác giả Rick Riordan, và là phần tiếp theo của ""Percy Jackson và các vị thần trên đỉnh Olympia"".",Các anh hùng của đỉnh Olympus,Rick Riordan
+Candy Candy là tiểu thuyết của nữ tác giả Kyoko Mizuki.,Candy Candy,Kyoko Mizuki
+Truyện Phòng trọ ba người là một tác phẩm của nhà văn Nguyễn Nhật Ánh sáng tác vào năm 1990.,Phòng trọ ba người,Nguyễn Nhật Ánh
+"Uyên ương đao là một tiểu thuyết võ hiệp của Kim Dung, xuất bản lần đầu vào năm 1961 trên ""Minh Báo"".",Uyên ương đao,Kim Dung
+"Đây thôn Vĩ Dạ là bài thơ do thi sĩ Hàn Mặc Tử sáng tác vào khoảng năm 1938, in lần đầu trong tập ""Thơ Điên"".",Đây thôn Vĩ Dạ,Hàn Mặc Tử
+"Thư kiếm ân cừu lục là một tiểu thuyết võ hiệp của nhà văn Kim Dung, được đăng trên ""Tân vãn báo"" của Hồng Kông từ ngày 8 tháng 2 năm 1955 đến ngày 5 tháng 9 năm 1956.",Thư kiếm ân cừu lục,Kim Dung
+"Chú Thoòng hay Lão Phu Tử là tên một bộ truyện tranh hài hước của họa sĩ Vương Trạch, người Hồng Kông.",Chú Thoòng,Vương Trạch
+"A Song of Ice and Fire là bộ tiểu thuyết thể loại fantasy hùng tráng của nhà biên kịch, nhà văn Mỹ, George R. R. Martin.",A Song of Ice and Fire,George R. R. Martin
+Bàn tay khỉ là một truyện ngắn kinh dị siêu nhiên của W.W. Jacobs sáng tác năm 1902 và chuyển thể thành bộ phim cùng tên năm 2011.,Bàn tay khỉ,W.W. Jacobs
+"Phía Tây không có gì lạ hoặc Mặt trận miền Tây vẫn yên tĩnh là một cuốn tiểu thuyết viết về đề tài chống chiến tranh của Erich Maria Remarque, một cựu binh Đức từng tham gia Chiến tranh thế giới thứ nhất.",Phía Tây không có gì lạ,Erich Maria Remarque
+"Bi kịch ba hồi là một tiểu thuyết trinh thám của nhà văn người Anh Agatha Christie được hãng Dodd, Mead and Company xuất bản lần đầu tại Hoa Kỳ năm 1934 dưới tựa đề Murder in Three Acts, tác phẩm sau đó được Collins Crime Club xuất bản tại Anh vào tháng 1 năm 1935 với tên gốc ""Bi kịch ba hồi"".",Bi kịch ba hồi,Agatha Christie
+"Thần điêu hiệp lữ là một tiểu thuyết võ hiệp của Kim Dung, còn có tên khác là Thần Điêu đại hiệp.",Thần điêu hiệp lữ,Kim Dung
+"Slayers là một truyện ngắn của Kanzaka Hajime, sau đó được chuyển thành manga, 3 anime, 2 OVA, 5 movies, và 4 games.",Slayers,Kanzaka Hajime
+"Nỗi đau của chàng Werther là tiểu thuyết thể thư tín của văn hào Johann Wolfgang von Goethe, nảy sinh trong phong trào ""Bão táp và xung kích"" ở Thời kỳ Khai sáng trong lịch sử Đức nửa cuối thế kỷ thứ 18.",Nỗi đau của chàng Werther,Johann Wolfgang von Goethe
+"Robinson Crusoe là tiểu thuyết của nhà văn Anh Daniel Defoe, tên tiếng Anh đầy đủ: ""The life and strange surprising adventures of Robinson Crusoe of York, Mariner"".",Robinson Crusoe,Daniel Defoe
+"Sao chẳng về đây là một bài thơ hay của thi sĩ Nguyễn Bính, sáng tác năm 1941 Năm 1941 Nguyễn Bính vào Nam, khi đó những bài thơ của Nguyễn Bính đã làm độc giả Nam Bộ mến mộ, vì vậy có nhiều tờ báo thời đó mời Nguyễn Bính tham gia.",Sao chẳng về đây,Nguyễn Bính
+"Cựu Ngũ Đại sử là một sách lịch sử theo thể kỷ truyện trong 24 sách lịch sử Trung Quốc do Tiết Cư Chính thời Bắc Tống viết và biên soạn, tên gốc ban đầu là """"Lương Đường Tấn Hán Chu thư"""", tên thường gọi là """"Ngũ Đại sử"""", Âu Dương Tu sau khi biên soạn bộ Tân Ngũ Đại sử đã lấy chữ ""Cựu"" đặt cho bộ sách này thành Cựu Ngũ Đại sử nhằm phân biệt với sách của ông.",Cựu Ngũ Đại sử,Tiết Cư Chính
+"Bá tước Monte Cristo là một tiểu thuyết phiêu lưu của Alexandre Dumas ""cha"".",Bá tước Monte Cristo,Alexandre Dumas
+"Noli Me Tángere là một cuốn tiểu thuyết được viết bởi José Rizal, một người anh hùng dân tộc của Philippines.",Noli Me Tángere,José Rizal
+Thám tử Kindaichi là một trong những bộ truyện manga bí ẩn của Nhật Bản nói về những cuộc phiêu lưu của một cậu học sinh trung học tên là Kindaichi cháu trai của thám tử tư lừng danh Kindaichi Kosuke đi giải quyết những vụ án và truy lùng những tội phạm của hai tác giả Kanari Yozaburo hoặc Amagi Seimaru và người minh họa vẽ tranh cho tác phẩm là họa sĩ Satō Fumiya.,Thám tử Kindaichi,Kanari Yozaburo
+Kozure Ōkami tên tiếng Anh là Lone Wolf and Cub là một tác phẩm Jidaigeki Manga Nhật Bản của tác giả Koike Kazuo và họa sĩ Kojima Gōseki.,Kozure Ōkami,Koike Kazuo
+"The Sympathizer là tiểu thuyết đầu tay của nhà văn người Mỹ gốc Việt, Nguyễn Thanh Việt.",The Sympathizer,Nguyễn Thanh Việt
+Mật mã Da Vinci là một tiểu thuyết của nhà văn người Mỹ Dan Brown được xuất bản năm 2003 bởi nhà xuất bản Doubleday Fiction.,Mật mã Da Vinci,Dan Brown
+Don Quijote là tiểu thuyết của văn sĩ Miguel de Cervantes Saavedra.,Don Quijote,Miguel de Cervantes
+Nam quốc sơn hà là một bài thơ thất ngôn tứ tuyệt viết bằng văn ngôn không rõ tác giả.,Nam quốc sơn hà,Không rõ
+"Đi tìm thời gian đã mất là bộ tiểu thuyết gồm 7 tập của nhà văn Pháp Marcel Proust, được viết từ 1908-1909 đến 1922 và xuất bản từ 1913 đến 1927, trong đó 3 tập cuối chỉ được xuất bản sau khi tác giả qua đời.",Đi tìm thời gian đã mất,Marcel Proust
+Những kẻ rỗng tuếch – là một bài thơ của nhà thơ Mỹ đoạt giải Nobel Văn học năm 1948 T. S. Eliot.,Những kẻ rỗng tuếch,T. S. Eliot
+Trại súc vật là một tiểu thuyết trào phúng chỉ trích sự tha hóa của giới lãnh đạo chính trị của nhà văn Anh sinh tại Ấn Độ tên là George Orwell.,Trại súc vật,George Orwell
+"Sư tử tháng 3, được phát hành tại Nhật Bản dưới tên gọi, là một bộ manga dài kỳ của tác giả Chica Umino, người được biết tới với bộ truyện ""Honey and Clover"".",Sư tử tháng 3,Chica Umino
+"Vòng quanh thế giới trong 80 ngày là một tiểu thuyết phiêu lưu cổ điển của nhà văn Pháp Jules Verne, xuất bản lần đầu tiên năm 1873.",Vòng quanh thế giới trong 80 ngày,Jules Verne
+Hai số phận là một cuốn tiểu thuyết được sáng tác vào năm 1979 bởi nhà văn người Anh Jeffrey Archer.,Hai số phận,Jeffrey Archer
+El filibusterismo là tiểu thuyết thứ hai được viết bởi người anh hùng dân tộc Philippines José Rizal.,El filibusterismo,José Rizal
+Hiệp sĩ lưu ban là một light novel Nhật Bản sáng tác bởi Misora Riku và minh họa bởi Won.,Hiệp sĩ lưu ban,Misora Riku
+Bản thảo cương mục là một từ điển bách khoa của Trung Quốc về dược vật học được thầy thuốc Lý Thời Trân biên soạn vào thế kỷ 16 đầu thời nhà Minh.,Bản thảo cương mục,Lý Thời Trân
+Ở lưng chừng thời gian là tiểu thuyết của nhà văn Canada David Bergen.,Ở lưng chừng thời gian,David Bergen
+"Le feu, tên đầy đủ là Le Feu: journal d'une escouade là tiểu thuyết của nhà văn người Pháp Henri Barbusse.",Le feu,Henri Barbusse
+"Dế Mèn phiêu lưu ký là tác phẩm văn xuôi đặc sắc và nổi tiếng nhất của nhà văn Tô Hoài viết về loài vật, dành cho lứa tuổi thiếu nhi.",Dế Mèn phiêu lưu ký,Tô Hoài
+"Tim Mực là cuốn tiểu thuyết giả tưởng dành cho trẻ em của Cornelia Funke, cuốn sách đầu tiên của bộ ba Inkworld.",Tim mực,Cornelia Funke
+"Ba người lính ngự lâm là một tiểu thuyết của nhà văn người Pháp Alexandre Dumas cha, là cuốn đầu tiên của bộ ba tập truyện gồm ""Les Trois Mousquetaires"", ""Vingt Ans après"", và ""Le Vicomte de Bragelonne"".",Ba người lính ngự lâm,Alexandre Dumas
+"Phía bên kia nửa đêm là một tiểu thuyết của nhà văn Sidney Sheldon, được xuất bản lần đầu tiên vào năm 1973.",Phía bên kia nửa đêm,Sidney Sheldon
+"Shijō Saikyō no Deshi Ken'ichi, tạm dịch là Kenichi, võ sinh mạnh nhất lịch sử, là loạt truyện tranh manga và loạt phim hoạt hình anime được viết bởi tác giả ""Matsuena Syun"", được phát hành lần đầu trên tạp chí Shōnen Sunday.",Shijō Saikyō no Deshi Ken'ichi,Matsuena Syun
+Vân đài loại ngữ là một tác phẩm viết bằng chữ Hán vào năm 1773 của học giả người Việt Nam là Lê Quý Đôn.,Vân đài loại ngữ,Lê Quý Đôn
+Người xa lạ là một tiểu thuyết của Albert Camus được viết vào năm 1942.,Người xa lạ,Albert Camus
+Tuyệt Đại Song Kiêu hay còn được gọi là Giang Hồ Thập Ác là một tác phẩm võ hiệp được viết bởi nhà văn Cổ Long vào năm 1967.,Giang hồ thập ác,Cổ Long
+Golden Legend là một bộ sưu tập tiểu sử các vị thánh Kitô giáo của Jacobus da Varagine được phổ biến rộng rãi vào cuối thời Trung cổ ở châu Âu.,Golden Legend,Jacobus da Varagine
+Hành trình vào tâm Trái Đất là một tiểu thuyết khoa học viễn tưởng của Jules Verne xuất bản vào năm 1864.,Hành trình vào tâm Trái đất,Jules Verne
+"Cung oán ngâm khúc hay gọi tắt là Cung oán là tác phẩm kiệt xuất của Nguyễn Gia Thiều, được viết bằng chữ Nôm, gồm 356 câu thơ làm theo thể song thất lục bát.",Cung oán ngâm khúc,Nguyễn Gia Thiều
+Ly Tao là một trong những bài thơ nổi tiếng trong lịch sử Trung Quốc do Khuất Nguyên sáng tác.,Ly tao,Khuất Nguyên
+"Gatsby vĩ đại hay Đại gia Gatsby, là một kiệt tác của nhà văn F. Scott Fitzgerald người Mỹ, được xuất bản lần đầu vào 10 tháng 4 năm 1925.",Gatsby vĩ đại,F. Scott Fitzgerald
+", có nghĩa là ""Märchen Awakens Romance"", là một series manga được tạo ra bởi mangaka Nobuyuki Anzai.",MÄR,Nobuyuki Anzai
+"Chuyện một con người chân chính là một cuốn tiểu thuyết khai thác đề tài số phận con người trong cuộc Chiến tranh Vệ quốc vĩ đại của nhà văn Boris Polevoy, ra mắt lần đầu năm 1946.",Chuyện một con người chân chính,Boris Polevoy
+Cho tôi xin một vé đi tuổi thơ là truyện dài của nhà văn Nguyễn Nhật Ánh.,Cho tôi xin một vé đi tuổi thơ,Nguyễn Nhật Ánh
+"Nhện Tuyết là cuốn đầu tiên trong bộ ba tác phẩm truyện cho thiếu nhi của nữ nhà văn Anh Jenny Nimmo<br> Nhên Tuyết là câu chuyện ở một miền quê huyền thoại xứ Wales, Anh Quốc, kể về cậu bé phù thủy Gwyn trong hành trình đạt được ""những điều trái tim mình mong ước"".",Nhện tuyết,Jenny Nimmo
+Trên sa mạc và trong rừng thẳm là một tiểu thuyết dành cho thiếu nhi của nhà văn Ba Lan Henryk Sienkiewicz.,Trên sa mạc và trong rừng thẳm,Henryk Sienkiewicz
+"Xứ tuyết là tiểu thuyết của văn hào Nhật Bản Kawabata Yasunari, được khởi bút từ 1935 và hoàn thành năm 1947.",Xứ tuyết,Kawabata Yasunari
+"Số đỏ là một tiểu thuyết văn học của nhà văn Vũ Trọng Phụng, đăng ở Hà Nội báo từ số 40 ngày 7 tháng 10 năm 1936 và được in thành sách lần đầu vào năm 1938.",Số đỏ,Vũ Trọng Phụng
+"xkcd, đôi khi được viết là XKCD, là một truyện tranh trực tuyến do Randall Munroe vẽ.",Xkcd,Randall Munroe
+Anastasia tự lập là tiêu thuyết dành cho lứa tuổi thanh thiếu niên của tác giả Lois Lowry.,Anastasia tự lập,Lois Lowry
+Phê phán cương lĩnh Gotha là văn kiện của nhà tư tưởng người Đức Karl Marx chỉ trích dự thảo cương lĩnh Gotha.,Phê phán Cương lĩnh Gotha,Karl Marx
+Án mạng trên sông Nile là một tiểu thuyết hình sự của nhà văn Agatha Christie được hãng Collins Crime Club xuất bản lần đầu tại Anh ngày 1 tháng 11 năm 1937.,Án mạng trên sông Nile,Agatha Christie
+"""Bộ quần áo mới của hoàng đế"" là một truyện ngắn của nhà văn Hans Christian Andersen về việc hai người thợ dệt hứa với vị hoàng đế là sẽ dệt cho ông một bộ y phục mà khi ông mặc vào thì những kẻ ngu ngốc, bất tài hoặc bất xứng với địa vị của họ sẽ không thể nhìn thấy.",Bộ quần áo mới của hoàng đế,Hans Christian Andersen

@@ -137,6 +137,43 @@ class SpPhoBERTTrainer(BaseTrainer):
         self._logger.info("Saved in: %s" % self._save_path)
         self._close_summary_writer()
 
+    def predict(self, dataset_path: str, types_path:str, input_reader_cls: BaseInputReader):
+        args = self.args
+
+        dataset_label = 'predict'
+        self._logger.info("Dataset: %s" % dataset_path)
+        self._logger.info("Model: %s" % args.model_type)
+
+        # read dataset
+        input_reader = input_reader_cls(types_path, self._tokenizer,
+                                        max_span_size=args.max_span_size, logger=self._logger)
+
+        input_reader.read({dataset_label: dataset_path})
+        self._log_datasets(input_reader)
+
+        #create model
+        model_class = models.get_model(self.args.model_type)
+
+        # config = PhobertConfig.from_pretrained(self.args.config_path)
+
+        model = model_class.from_pretrained(self.args.model_path,
+                                            config="models/config.json",
+                                            cache_dir=self.args.cache_path,
+                                            # SpERT model parameters
+                                            cls_token=0,
+                                            relation_types=input_reader.relation_type_count - 1,
+                                            entity_types=input_reader.entity_type_count,
+                                            max_pairs=self.args.max_pairs,
+                                            prop_drop=self.args.prop_drop,
+                                            size_embedding=self.args.size_embedding,
+                                            freeze_transformer=self.args.freeze_transformer)
+        model.to(self._device)
+
+        #predict
+        self._predict(model, input_reader.get_dataset(dataset_label), input_reader)
+
+        self._logger.info("Logged in: %s" % self._log_path)
+        self._close_summary_writer()
 
     def eval(self, dataset_path: str, types_path: str, input_reader_cls: BaseInputReader):
         args = self.args
@@ -217,6 +254,46 @@ class SpPhoBERTTrainer(BaseTrainer):
                 self._log_train(optimizer, batch_loss, epoch, iteration, global_iteration, dataset.label)
 
         return iteration
+
+
+    def _predict(self, model: torch.nn.Module, dataset: Dataset, input_reader: JsonInputReader,
+                 epoch: int = 0, updates_epoch: int = 0, iteration: int = 0):
+
+        self._logger.info("Predict: %s" % dataset.label)
+
+        if isinstance(model, DataParallel):
+            model = model.modules()
+
+        # create evaluator
+        evaluator = Evaluator(dataset, input_reader, self._tokenizer,
+                              self.args.rel_filter_threshold, self.args.no_overlapping, self._predictions_path,
+                              self._examples_path, self.args.example_count, epoch, dataset.label)
+        # create data loader
+        dataset.switch_mode(Dataset.EVAL_MODE)
+        data_loader = DataLoader(dataset, batch_size=self.args.eval_batch_size, shuffle=False, drop_last=False,
+                                 num_workers=self.args.sampling_processes, collate_fn=sampling.collate_fn_padding)
+
+        returned_predict= list()
+        with torch.no_grad():
+            model.eval()
+
+            # iteraate batches
+            total = math.ceil(dataset.document_count / self.args.eval_batch_size)
+            for batch in tqdm(data_loader, total=total, desc='Evaluate epoch %s' % epoch):
+                # move batch to selected device
+                batch = util.to_device(batch, self._device)
+
+                key = batch.keys()
+                # run model (forward pass)
+                result = model(encodings=batch['encodings'], context_masks=batch['context_masks'],
+                               entity_masks=batch['entity_masks'], entity_sizes=batch['entity_sizes'],
+                               entity_spans=batch['entity_spans'], entity_sample_masks=batch['entity_sample_masks'],
+                               evaluate=True)
+                entity_clf, rel_clf, rels = result
+                returned_predict.append(evaluator.predict_batch(entity_clf, rel_clf, rels, batch))
+                # print(rel_clf, rels)
+        print(returned_predict)
+        print(len(returned_predict))
 
 
     def _eval(self, model: torch.nn.Module, dataset: Dataset, input_reader: JsonInputReader,
