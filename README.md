@@ -1,3 +1,5 @@
+### Currently we are using an [opened-pull-request](https://github.com/huggingface/transformers/pull/6129) of transformers to easily intergrate PhoBert and PhoBertTokenizer 
+
 # [PhoBERT](https://github.com/VinAIResearch/PhoBERT/blob/master/README.md): Pre-trained language models for Vietnamese <a name="introduction"></a>
 
 Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese ([Pho](https://en.wikipedia.org/wiki/Pho), i.e. "Phở", is a popular food in Vietnam): 
