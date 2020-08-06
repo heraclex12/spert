@@ -33,7 +33,7 @@ def __eval(run_args):
 def __predict(run_args):
     trainer = SpPhoBERTTrainer(run_args)
     trainer.predict(dataset_path=run_args.dataset_path, types_path=run_args.types_path,
-                 input_reader_cls=input_reader.JsonInputReader)
+                 input_reader_cls=input_reader.BatchJsonInputReader)
 
 
 

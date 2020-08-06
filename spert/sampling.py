@@ -1,7 +1,7 @@
 import random
 
 import torch
-
+import numpy as np
 from spert import util
 
 
@@ -123,7 +123,7 @@ def create_train_sample(doc, neg_entity_count: int, neg_rel_count: int, max_span
     return dict(encodings=encodings, context_masks=context_masks, entity_masks=entity_masks,
                 entity_sizes=entity_sizes, entity_types=entity_types,
                 rels=rels, rel_masks=rel_masks, rel_types=rel_types_onehot,
-                entity_sample_masks=entity_sample_masks, rel_sample_masks=rel_sample_masks)
+                entity_sample_masks=entity_sample_masks, rel_sample_masks=rel_sample_masks, _id=doc._doc_i)
 
 
 def create_eval_sample(doc, max_span_size: int):
@@ -171,7 +171,8 @@ def create_eval_sample(doc, max_span_size: int):
         entity_sample_masks = torch.zeros([1], dtype=torch.bool)
 
     return dict(encodings=encodings, context_masks=context_masks, entity_masks=entity_masks,
-                entity_sizes=entity_sizes, entity_spans=entity_spans, entity_sample_masks=entity_sample_masks)
+                entity_sizes=entity_sizes, entity_spans=entity_spans, entity_sample_masks=entity_sample_masks,
+                _id=doc._doc_id)
 
 
 def create_entity_mask(start, end, context_size):
@@ -193,10 +194,11 @@ def collate_fn_padding(batch):
 
     for key in keys:
         samples = [s[key] for s in batch]
+        if key != '_id':
+            if torch.is_tensor(batch[0][key]) and not batch[0][key].shape:
+                padded_batch[key] = torch.stack(samples)
+            else:
+                padded_batch[key] = util.padded_stack([s[key] for s in batch])
 
-        if not batch[0][key].shape:
-            padded_batch[key] = torch.stack(samples)
-        else:
-            padded_batch[key] = util.padded_stack([s[key] for s in batch])
-
+    padded_batch['_id'] = batch[0]['_id']
     return padded_batch

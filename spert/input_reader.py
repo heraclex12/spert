@@ -10,7 +10,6 @@ from transformers import PhobertTokenizer
 from spert import util
 from spert.entities import Dataset, EntityType, RelationType, Entity, Relation, Document
 
-
 class BaseInputReader(ABC):
     def __init__(self, types_path: str, tokenizer: PhobertTokenizer, neg_entity_count: int = None,
                  neg_rel_count: int = None, max_span_size: int = None, logger: Logger = None):
@@ -58,6 +57,10 @@ class BaseInputReader(ABC):
 
     @abstractmethod
     def read(self, datasets):
+        pass
+
+    @abstractmethod
+    def dump_dataset(self, dataset_label, documents):
         pass
 
     def get_dataset(self, label) -> Dataset:
@@ -122,6 +125,107 @@ class BaseInputReader(ABC):
     def __repr__(self):
         return self.__str__()
 
+
+class BatchJsonInputReader(BaseInputReader):
+    def __init__(self, types_path: str, tokenizer: PhobertTokenizer, neg_entity_count: int = None,
+                 neg_rel_count: int = None, max_span_size: int = None, logger: Logger = None):
+        super().__init__(types_path, tokenizer, neg_entity_count, neg_rel_count, max_span_size, logger)
+
+    def read(self, datasets):
+        return None
+
+    def dump_dataset(self, dataset_label, documents):
+        dataset = Dataset(dataset_label, self._relation_types, self._entity_types, self._neg_entity_count,
+                              self._neg_rel_count, self._max_span_size)
+        self._parse_dataset(documents, dataset)
+        self._datasets[dataset_label] = dataset
+
+        self._context_size = self._calc_context_size(self._datasets.values())
+
+    def _parse_dataset(self, documents, dataset):
+        for document in tqdm(documents, desc="Parse dataset '%s'" % dataset.label):
+            self._parse_document(document, dataset)
+
+    def _parse_document(self, doc, dataset) -> Document:
+        doc = json.loads(doc)
+        jtokens = doc['tokens']
+        jrelations = doc['relations']
+        jentities = doc['entities']
+
+        # parse tokens
+        doc_tokens, doc_encoding = self._parse_tokens(jtokens, dataset)
+
+        # parse entity mentions
+        entities = self._parse_entities(jentities, doc_tokens, dataset)
+
+        # parse relations
+        relations = self._parse_relations(jrelations, entities, dataset)
+
+        # create document
+        document = dataset.create_document(doc['doc_id'], doc_tokens, entities, relations, doc_encoding)
+
+        return document
+
+    def _parse_tokens(self, jtokens, dataset):
+        doc_tokens = []
+
+        # full document encoding including special tokens ([CLS] and [SEP]) and byte-pair encodings of original tokens
+        doc_encoding = [0]
+        # doc_encoding = [self._tokenizer.cls_token_id]
+        # parse tokens
+        for i, token_phrase in enumerate(jtokens):
+            token_encoding = self._tokenizer.encode(token_phrase, add_special_tokens=False)
+            span_start, span_end = (len(doc_encoding), len(doc_encoding) + len(token_encoding))
+
+            token = dataset.create_token(i, span_start, span_end, token_phrase)
+
+            doc_tokens.append(token)
+            doc_encoding += token_encoding
+
+        doc_encoding += [2]
+        # doc_encoding += [self._tokenizer.sep_token_id]
+
+        return doc_tokens, doc_encoding
+
+    def _parse_entities(self, jentities, doc_tokens, dataset) -> List[Entity]:
+        entities = []
+
+        for entity_idx, jentity in enumerate(jentities):
+            entity_type = "ANY"
+            start, end = jentity['start'], jentity['end']
+
+            # create entity mention
+            tokens = doc_tokens[start:end]
+            phrase = " ".join([t.phrase for t in tokens])
+            entity = dataset.create_entity(entity_type, tokens, phrase)
+            entities.append(entity)
+
+        return entities
+
+    def _parse_relations(self, jrelations, entities, dataset) -> List[Relation]:
+        relations = []
+
+        for jrelation in jrelations:
+            relation_type = self._relation_types[jrelation['type']]
+
+            head_idx = jrelation['head']
+            tail_idx = jrelation['tail']
+
+            # create relation
+            head = entities[head_idx]
+
+            tail = entities[tail_idx]
+
+            reverse = int(tail.tokens[0].index) < int(head.tokens[0].index)
+
+            # for symmetric relations: head occurs before tail in sentence
+            if relation_type.symmetric and reverse:
+                head, tail = util.swap(head, tail)
+
+            relation = dataset.create_relation(relation_type, head_entity=head, tail_entity=tail, reverse=reverse)
+            relations.append(relation)
+
+        return relations
 
 class JsonInputReader(BaseInputReader):
     def __init__(self, types_path: str, tokenizer: PhobertTokenizer, neg_entity_count: int = None,

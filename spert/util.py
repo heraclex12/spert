@@ -205,8 +205,10 @@ def get_span_tokens(tokens, span):
 def to_device(batch, device):
     converted_batch = dict()
     for key in batch.keys():
-        converted_batch[key] = batch[key].to(device)
-
+        if key != '_id':
+            converted_batch[key] = batch[key].to(device)
+        else:
+            converted_batch[key] = batch[key]
     return converted_batch
 
 
@@ -223,3 +225,9 @@ def check_version(config, model_class, model_path):
                    % (model_class.VERSION, loaded_version))
             msg += "Use the code matching your version or train a new model."
             raise Exception(msg)
+
+
+def append_to_json(output_path, output):
+    with open(output_path, 'a+') as json_output:
+        json.dump(output, json_output)
+        json_output.write("\n")

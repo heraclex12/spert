@@ -61,6 +61,8 @@ class Evaluator:
         if self._rel_filter_threshold > 0:
             batch_rel_clf[batch_rel_clf < self._rel_filter_threshold] = 0
 
+        pred_sentence = list()
+
         for i in range(batch_size):
             # get model predictions for sample
             rel_clf = batch_rel_clf[i]
@@ -99,22 +101,24 @@ class Evaluator:
                 sample_pred_entities, sample_pred_relations = self._remove_overlapping(sample_pred_entities,
                                                                                        sample_pred_relations)
             #
+            result = dict()
+            result['doc_id'] = batch['_id']
+            result['pred'] = list()
 
-            result = list()
             for sample in sample_pred_relations:
                 e1 = vars(sample[0][2])
                 e1["start"] = sample[0][0]
                 e1["end"] = sample[0][1]
-
                 e2 = vars(sample[1][2])
                 e2["start"] = sample[1][0]
                 e2["end"] = sample[1][1]
 
                 r = vars(sample[2])
                 score = sample[3]
-                result.append({"e1": e1, "e2": e2, "r": r, "score": score})
+                result['pred'].append({"e1": e1, "e2": e2, "r": r, "score": score})
+            pred_sentence.append(result)
             # print("relation: ", sample_pred_relations)
-            return result
+        return pred_sentence
 
 
     def eval_batch(self, batch_entity_clf: torch.tensor, batch_rel_clf: torch.tensor,

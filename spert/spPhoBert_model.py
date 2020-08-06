@@ -122,9 +122,6 @@ class SpPhoBert(BertPreTrainedModel):
         # get cls token as candidate context representation
         entity_ctx = get_token(h, encodings, 1)
 
-        shape = entity_ctx.unsqueeze(1).shape
-        s2 = entity_spans_pool.shape
-        s3 = size_embeddings.shape
         # create candidate representations including context, max pooled span and size embedding
 
         entity_repr = torch.cat([entity_ctx.unsqueeze(1).repeat(1, entity_spans_pool.shape[1], 1),
@@ -132,7 +129,6 @@ class SpPhoBert(BertPreTrainedModel):
         entity_repr = self.dropout(entity_repr)
 
         # classify entity candidates
-        shape = entity_repr.shape
         entity_clf = self.entity_classifier(entity_repr)
 
         return entity_clf, entity_spans_pool

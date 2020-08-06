@@ -89,6 +89,8 @@ def eval_argparser():
 
     # Input
     arg_parser.add_argument('--dataset_path', type=str, help="Path to dataset")
+    arg_parser.add_argument('--config_path', type=str, help="Path to config model")
+    arg_parser.add_argument('--output_path', type=str, help="Path to output prediction")
 
     _add_common_args(arg_parser)
 
