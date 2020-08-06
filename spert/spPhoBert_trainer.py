@@ -161,7 +161,7 @@ class SpPhoBERTTrainer(BaseTrainer):
         util.check_version(config, model_class, self.args.model_path)
 
         model = model_class.from_pretrained(self.args.model_path,
-                                            config=self.args.model_path,
+                                            config=self.args.config_path,
                                             cache_dir=self.args.cache_path,
                                             # SpERT model parameters
                                             cls_token=0,

@@ -208,6 +208,7 @@ class JsonInputReader(BaseInputReader):
 
             # create relation
             head = entities[head_idx]
+
             tail = entities[tail_idx]
 
             reverse = int(tail.tokens[0].index) < int(head.tokens[0].index)

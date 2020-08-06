@@ -21,6 +21,14 @@ def _train_vn():
     arg_parser = train_argparser()
     process_configs(target=__train_vn, arg_parser=arg_parser)
 
+def __eval_vn(run_args):
+    trainer = SpPhoBERTTrainer(run_args)
+    trainer.eval(dataset_path=run_args.dataset_path, types_path=run_args.types_path, input_reader_cls=input_reader.JsonInputReader)
+
+def _eval_vn():
+    arg_parser = eval_argparser()
+    process_configs(target=__eval_vn, arg_parser= arg_parser)
+
 def _train():
     arg_parser = train_argparser()
     process_configs(target=__train, arg_parser=arg_parser)
