@@ -157,7 +157,6 @@ class SpPhoBERTTrainer(BaseTrainer):
                                                     max_span_size=args.max_span_size, logger=self._logger)
 
                     input_reader.dump_dataset(dataset_label, documents)
-                    self._log_datasets(input_reader)
 
                     #create model
                     if model is None:
@@ -176,7 +175,6 @@ class SpPhoBERTTrainer(BaseTrainer):
 
                     #predict
                     self._predict(model, input_reader.get_dataset(dataset_label), input_reader)
-                    self._logger.info("Logged in: %s" % self._log_path)
                     documents = []
 
                 if not line:
@@ -188,7 +186,6 @@ class SpPhoBERTTrainer(BaseTrainer):
                                                 max_span_size=args.max_span_size, logger=self._logger)
 
                 input_reader.dump_dataset(dataset_label, documents)
-                self._log_datasets(input_reader)
 
                 # create model
                 if model is None:
@@ -207,8 +204,8 @@ class SpPhoBERTTrainer(BaseTrainer):
 
                 # predict
                 self._predict(model, input_reader.get_dataset(dataset_label), input_reader)
-                self._logger.info("Logged in: %s" % self._log_path)
 
+        self._logger.info("Logged in: %s" % self._log_path)
         self._close_summary_writer()
 
     def eval(self, dataset_path: str, types_path: str, input_reader_cls: BaseInputReader):
@@ -304,8 +301,6 @@ class SpPhoBERTTrainer(BaseTrainer):
 
     def _predict(self, model: torch.nn.Module, dataset: Dataset, input_reader: JsonInputReader,
                  epoch: int = 0, updates_epoch: int = 0, iteration: int = 0):
-
-        self._logger.info("Predict: %s" % dataset.label)
 
         if isinstance(model, DataParallel):
             model = model.modules()
