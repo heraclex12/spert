@@ -143,15 +143,15 @@ class SpPhoBERTTrainer(BaseTrainer):
         dataset_label = 'predict'
         self._logger.info("Dataset: %s" % dataset_path)
         self._logger.info("Model: %s" % args.model_type)
-
+        model_class = models.get_model(self.args.model_type)
         # read dataset
+        model = None
         with open(dataset_path, 'r') as json_file:
             cnt = 0
-            batch_size = 32
+            batch_size = self.args.eval_batch_size
             documents = []
             output_batch = None
             for line in json_file:
-
                 if cnt == batch_size or not line:
                     cnt = 0
                     input_reader = input_reader_cls(types_path, self._tokenizer,
@@ -161,25 +161,22 @@ class SpPhoBERTTrainer(BaseTrainer):
                     self._log_datasets(input_reader)
 
                     #create model
-                    model_class = models.get_model(self.args.model_type)
-
-                    model = model_class.from_pretrained(self.args.model_path,
-                                                        config=self.args.config_path,
-                                                        cache_dir=self.args.cache_path,
-                                                        # SpERT model parameters
-                                                        cls_token=0,
-                                                        relation_types=input_reader.relation_type_count - 1,
-                                                        entity_types=input_reader.entity_type_count,
-                                                        max_pairs=self.args.max_pairs,
-                                                        prop_drop=self.args.prop_drop,
-                                                        size_embedding=self.args.size_embedding,
-                                                        freeze_transformer=self.args.freeze_transformer)
-                    model.to(self._device)
+                    if model is None:
+                        model = model_class.from_pretrained(self.args.model_path,
+                                                            config=self.args.config_path,
+                                                            cache_dir=self.args.cache_path,
+                                                            # SpERT model parameters
+                                                            cls_token=0,
+                                                            relation_types=input_reader.relation_type_count - 1,
+                                                            entity_types=input_reader.entity_type_count,
+                                                            max_pairs=self.args.max_pairs,
+                                                            prop_drop=self.args.prop_drop,
+                                                            size_embedding=self.args.size_embedding,
+                                                            freeze_transformer=self.args.freeze_transformer)
+                        model.to(self._device)
 
                     #predict
-                    output_batch = self._predict(model, input_reader.get_dataset(dataset_label), input_reader)
-                    if output_batch:
-                        util.append_to_json(self.args.output_path, output_batch)
+                    self._predict(model, input_reader.get_dataset(dataset_label), input_reader)
                     self._logger.info("Logged in: %s" % self._log_path)
                     documents = []
 
@@ -195,27 +192,25 @@ class SpPhoBERTTrainer(BaseTrainer):
                 self._log_datasets(input_reader)
 
                 # create model
-                model_class = models.get_model(self.args.model_type)
-
-                model = model_class.from_pretrained(self.args.model_path,
-                                                    config=self.args.config_path,
-                                                    cache_dir=self.args.cache_path,
-                                                    # SpERT model parameters
-                                                    cls_token=0,
-                                                    relation_types=input_reader.relation_type_count - 1,
-                                                    entity_types=input_reader.entity_type_count,
-                                                    max_pairs=self.args.max_pairs,
-                                                    prop_drop=self.args.prop_drop,
-                                                    size_embedding=self.args.size_embedding,
-                                                    freeze_transformer=self.args.freeze_transformer)
-                model.to(self._device)
+                if model is None:
+                    model = model_class.from_pretrained(self.args.model_path,
+                                                        config=self.args.config_path,
+                                                        cache_dir=self.args.cache_path,
+                                                        # SpERT model parameters
+                                                        cls_token=0,
+                                                        relation_types=input_reader.relation_type_count - 1,
+                                                        entity_types=input_reader.entity_type_count,
+                                                        max_pairs=self.args.max_pairs,
+                                                        prop_drop=self.args.prop_drop,
+                                                        size_embedding=self.args.size_embedding,
+                                                        freeze_transformer=self.args.freeze_transformer)
+                    model.to(self._device)
 
                 # predict
                 output_batch = self._predict(model, input_reader.get_dataset(dataset_label), input_reader)
                 if output_batch:
                     util.append_to_json(self.args.output_path, output_batch)
                 self._logger.info("Logged in: %s" % self._log_path)
-
 
         self._close_summary_writer()
 
@@ -320,7 +315,7 @@ class SpPhoBERTTrainer(BaseTrainer):
 
         # create evaluator
         evaluator = Evaluator(dataset, input_reader, self._tokenizer,
-                              self.args.rel_filter_threshold, self.args.no_overlapping, self._predictions_path,
+                              self.args.rel_filter_threshold, self.args.no_overlapping, self.args.output_path,
                               self._examples_path, self.args.example_count, epoch, dataset.label)
         # create data loader
         dataset.switch_mode(Dataset.EVAL_MODE)
@@ -344,12 +339,9 @@ class SpPhoBERTTrainer(BaseTrainer):
                                evaluate=True)
                 entity_clf, rel_clf, rels = result
 
-                pred_sentence = evaluator.predict_batch(entity_clf, rel_clf, rels, batch)
-                # pred_sentence['id'] = batch.
+                evaluator.predict_batch(entity_clf, rel_clf, rels, batch)
 
-                returned_predict.append(pred_sentence)
-                # print(rel_clf, rels)
-        return returned_predict
+        evaluator.store_predictions()
 
 
     def _eval(self, model: torch.nn.Module, dataset: Dataset, input_reader: JsonInputReader,

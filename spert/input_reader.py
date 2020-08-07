@@ -3,7 +3,7 @@ from abc import abstractmethod, ABC
 from collections import OrderedDict
 from logging import Logger
 from typing import Iterable, List
-
+import numpy as np
 from tqdm import tqdm
 from transformers import PhobertTokenizer
 

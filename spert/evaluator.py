@@ -101,23 +101,9 @@ class Evaluator:
                 sample_pred_entities, sample_pred_relations = self._remove_overlapping(sample_pred_entities,
                                                                                        sample_pred_relations)
             #
-            result = dict()
-            result['doc_id'] = batch['_id']
-            result['pred'] = list()
 
-            for sample in sample_pred_relations:
-                e1 = vars(sample[0][2])
-                e1["start"] = sample[0][0]
-                e1["end"] = sample[0][1]
-                e2 = vars(sample[1][2])
-                e2["start"] = sample[1][0]
-                e2["end"] = sample[1][1]
-
-                r = vars(sample[2])
-                score = sample[3]
-                result['pred'].append({"e1": e1, "e2": e2, "r": r, "score": score})
-            pred_sentence.append(result)
-            # print("relation: ", sample_pred_relations)
+        self._pred_entities.append(sample_pred_entities)
+        self._pred_relations.append(sample_pred_relations)
         return pred_sentence
 
 
@@ -251,12 +237,12 @@ class Evaluator:
             converted_relations = sorted(converted_relations, key=lambda r: r['head'])
 
             doc_predictions = dict(tokens=[t.phrase for t in tokens], entities=converted_entities,
-                                   relations=converted_relations)
+                                   relations=converted_relations, doc_id=doc._doc_id)
             predictions.append(doc_predictions)
 
         # store as json
         label, epoch = self._dataset_label, self._epoch
-        with open(self._predictions_path % (label, epoch), 'w') as predictions_file:
+        with open(self._predictions_path.format(label, epoch), 'w') as predictions_file:
             json.dump(predictions, predictions_file)
 
     def store_examples(self):
