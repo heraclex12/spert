@@ -150,7 +150,6 @@ class SpPhoBERTTrainer(BaseTrainer):
             cnt = 0
             batch_size = self.args.eval_batch_size
             documents = []
-            output_batch = None
             for line in json_file:
                 if cnt == batch_size or not line:
                     cnt = 0
@@ -207,9 +206,7 @@ class SpPhoBERTTrainer(BaseTrainer):
                     model.to(self._device)
 
                 # predict
-                output_batch = self._predict(model, input_reader.get_dataset(dataset_label), input_reader)
-                if output_batch:
-                    util.append_to_json(self.args.output_path, output_batch)
+                self._predict(model, input_reader.get_dataset(dataset_label), input_reader)
                 self._logger.info("Logged in: %s" % self._log_path)
 
         self._close_summary_writer()
