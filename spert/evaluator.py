@@ -232,7 +232,7 @@ class Evaluator:
                 head_idx = converted_entities.index(converted_head)
                 tail_idx = converted_entities.index(converted_tail)
 
-                converted_relation = dict(type=relation_type, head=head_idx, tail=tail_idx)
+                converted_relation = dict(type=relation_type, head=head_idx, tail=tail_idx, score=relation[3])
                 converted_relations.append(converted_relation)
             converted_relations = sorted(converted_relations, key=lambda r: r['head'])
 

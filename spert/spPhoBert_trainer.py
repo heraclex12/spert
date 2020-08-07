@@ -332,7 +332,6 @@ class SpPhoBERTTrainer(BaseTrainer):
                 entity_clf, rel_clf, rels = result
 
                 evaluator.predict_batch(entity_clf, rel_clf, rels, batch)
-
         evaluator.store_predictions()
 
 
