@@ -91,7 +91,7 @@ def eval_argparser():
     arg_parser.add_argument('--dataset_path', type=str, help="Path to dataset")
     arg_parser.add_argument('--config_path', type=str, help="Path to config model")
     arg_parser.add_argument('--output_path', type=str, help="Path to output prediction")
-
+    arg_parser.add_argument('--predict_batch_size', type=int, default=32, help="Path to predict batch size")
     _add_common_args(arg_parser)
 
     return arg_parser

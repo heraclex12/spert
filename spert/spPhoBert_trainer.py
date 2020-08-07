@@ -148,7 +148,7 @@ class SpPhoBERTTrainer(BaseTrainer):
         model = None
         with open(dataset_path, 'r') as json_file:
             cnt = 0
-            batch_size = self.args.eval_batch_size
+            batch_size = self.args.predict_batch_size
             documents = []
             for line in json_file:
                 if cnt == batch_size or not line:
