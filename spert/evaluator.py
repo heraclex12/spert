@@ -243,8 +243,9 @@ class Evaluator:
         # store as json
         label, epoch = self._dataset_label, self._epoch
         with open(self._predictions_path.format(label, epoch), 'a+') as predictions_file:
-            json.dump(predictions, predictions_file)
-            predictions_file.write("\n")
+            for prediction in predictions:
+                predictions_file.write(json.dumps(prediction, ensure_ascii=False) + '\n')
+
 
     def store_examples(self):
         if jinja2 is None:
